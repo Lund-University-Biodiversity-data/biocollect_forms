@@ -1,0 +1,491 @@
+{
+  "modelName": "Slinga",
+  "title": "Slinga",
+  "record": true,
+  "dataModel": [
+    {
+      "dataType": "date",
+      "defaultValue": "${now}",
+      "name": "surveyDate",
+      "dwcAttribute": "eventDate",
+      "validate": "required"
+    },
+    {
+      "dataType": "text",
+      "name": "recordedBy",
+      "dwcAttribute": "recordedBy",
+      "validate": "required"
+    },
+    {
+      "allowRowDelete": "true",
+      "columns": [
+        {
+          "dataType": "text",
+          "name": "helper"
+        }
+      ],
+      "dataType": "list",
+      "name": "helpers"
+    },
+    {
+      "dataType": "time",
+      "name": "surveyStartTime",
+      "dwcAttribute": "eventTime",
+      "validate": "required"
+    },
+    {
+      "dataType": "time",
+      "name": "surveyFinishTime",
+      "validate": "required"
+    },
+    {
+      "dataType": "number",
+      "name": "percentageOfSunlight",
+      "validate": "min[0],max[100]"
+    },
+    {
+      "dataType": "number",
+      "name": "temperatureInDegreesCelcius",
+      "validate": "min[0],max[40]"
+    },
+    {
+      "dataType": "text",
+      "name": "windDirectionCategorical",
+      "constraints": [
+        "Norr",
+        "Nordost",
+        "Öster",
+        "Sydost",
+        "Syd",
+        "Sydväst",
+        "Väster",
+        "Nordväst",
+        "Vindstilla"
+      ]
+    },
+    {
+      "dataType": "text",
+      "name": "windSpeedKmPerHourCategorical",
+      "constraints": [
+        "0 (Rök stiger rakt upp)",
+        "1 (Knappt märkbar för känseln)",
+        "2 (Små löv rör sig)",
+        "3 (Små kvistar rör sig)",
+        "4 (Tunnare grenar rör sig)",
+        "5 (Mindre träd svajar)",
+        "6 (Stora grenar i rörelse)"
+      ]
+    },
+    {
+      "defaultAccuracy": 50,
+      "hideMyLocation": false,
+      "columns": [
+        {
+          "dwcAttribute": "verbatimLatitude",
+          "source": "locationLatitude"
+        },
+        {
+          "dwcAttribute": "verbatimLongitude",
+          "source": "locationLongitude"
+        },
+        {
+          "source": "Locality"
+        },
+        {
+          "source": "Accuracy"
+        },
+        {
+          "source": "Notes"
+        },
+        {
+          "source": "Source"
+        }
+      ],
+      "dataType": "geoMap",
+      "name": "location",
+      "dwcAttribute": "verbatimCoordinates",
+      "hideSiteSelection": true,
+      "zoomToProjectArea": true,
+      "validate": "required"
+    },
+    {
+      "dataType": "text",
+      "name": "notes",
+      "dwcAttribute": "eventRemarks"
+    },
+    {
+      "allowRowDelete": "true",
+      "columns": [
+        {
+          "dataType": "species",
+          "name": "species",
+          "dwcAttribute": "scientificName",
+          "validate": "required"
+        },
+        {
+          "dataType": "number",
+          "name": "S1",
+          "validate":"min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "S2",
+          "validate":"min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "S3",
+          "validate":"min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "S4",
+          "validate":"min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "S5",
+          "validate":"min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "S6",
+          "validate":"min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "S7",
+          "validate":"min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "S8",
+          "validate":"min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "S9",
+          "validate":"min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "S10",
+          "validate":"min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "S11",
+          "validate":"min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "S12",
+          "validate":"min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "S13",
+          "validate":"min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "S14",
+          "validate":"min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "S15",
+          "validate":"min[0]"
+        },
+        {
+          "dataType": "number",
+          "computed": {
+            "operation": "sum",
+            "dependents": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6",
+              "S7",
+              "S8",
+              "S9",
+              "S10",
+              "S11",
+              "S12",
+              "S13",
+              "S14",
+              "S15"
+            ]
+          },
+          "name": "individualCount",
+          "dwcAttribute": "individualCount",
+          "validate": "required,min[1]"
+        }
+      ],
+      "dataType": "list",
+      "name": "observations"
+    }
+  ],
+  "viewModel": [
+    {
+      "type": "row",
+      "items": [
+        {
+          "computed": null,
+          "type": "col",
+          "items": [
+            {
+              "type": "row",
+              "items": [
+                {
+                  "boxed": true,
+                  "title": "Besöksinformation",
+                  "type": "section",
+                  "items": [
+                    {
+                      "computed": null,
+                      "type": "col",
+                      "items": [
+                        {
+                          "preLabel": "Datum",
+                          "computed": null,
+                          "source": "surveyDate",
+                          "type": "date"
+                        },
+                        {
+                          "preLabel": "Rapportör",
+                          "computed": null,
+                          "source": "recordedBy",
+                          "type": "text"
+                        },
+                        {
+                          "type": "row",
+                          "items": [
+                            {
+                              "columns": [
+                                {
+                                  "title": "Medinventerare",
+                                  "width": "90%",
+                                  "source": "helper",
+                                  "type": "text"
+                                }
+                              ],
+                              "source": "helpers",
+                              "type": "table",
+                              "userAddedRows": true,
+                              "disableTableUpload": true
+                            }
+                          ]
+                        },
+                        {
+                          "preLabel": "Starttid",
+                          "computed": null,
+                          "source": "surveyStartTime",
+                          "type": "time"
+                        },
+                        {
+                          "preLabel": "Sluttid",
+                          "source": "surveyFinishTime",
+                          "type": "time"
+                        },
+                        {
+                          "preLabel": "Solsken (%)",
+                          "computed": null,
+                          "source": "percentageOfSunlight",
+                          "type": "number"
+                        },
+                        {
+                          "preLabel": "Temperatur (°Celsius)",
+                          "computed": null,
+                          "source": "temperatureInDegreesCelcius",
+                          "type": "number"
+                        },
+                        {
+                          "preLabel": "Vindstyrka",
+                          "computed": null,
+                          "source": "windSpeedKmPerHourCategorical",
+                          "type": "selectOne"
+                        },
+                        {
+                          "preLabel": "Vindriktning",
+                          "computed": null,
+                          "source": "windDirectionCategorical",
+                          "type": "selectOne"
+                        }
+                      ]
+                    }
+                  ],
+                  "class": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "computed": null,
+          "type": "col",
+          "items": [
+            {
+              "computed": null,
+              "type": "row",
+              "items": [
+                {
+                  "boxed": true,
+                  "title": "Lokalnamn",
+                  "type": "section",
+                  "items": [
+                    {
+                      "includeNotes": false,
+                      "orientation": "vertical",
+                      "computed": null,
+                      "autoLocalitySearch": false,
+                      "readonly": true,
+                      "includeSource": false,
+                      "includeAccuracy": false,
+                      "hideSiteSelection": false,
+                      "source": "location",
+                      "type": "geoMap",
+                      "includeLocality": false
+                    }
+                  ],
+                  "class": ""
+                }
+              ]
+            },
+            {
+              "computed": null,
+              "type": "row",
+              "items": [
+                {
+                  "preLabel": "Kommentar",
+                  "computed": null,
+                  "source": "notes",
+                  "type": "textarea"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "items": [
+        {
+          "columns": [
+            {
+              "title": "Art",
+              "width": "20%",
+              "source": "species",
+              "type": "autocomplete"
+            },
+            {
+              "width": "6%",
+              "source": "S1",
+              "title": "S1",
+              "type": "number"
+            },
+            {
+              "width": "6%",
+              "source": "S2",
+              "title": "S2",
+              "type": "number"
+            },
+            {
+              "width": "6%",
+              "source": "S3",
+              "title": "S3",
+              "type": "number"
+            },
+            {
+              "width": "6%",
+              "source": "S4",
+              "title": "S4",
+              "type": "number"
+            },
+            {
+              "width": "6%",
+              "source": "S5",
+              "title": "S5",
+              "type": "number"
+            },
+            {
+              "width": "6%",
+              "source": "S6",
+              "title": "S6",
+              "type": "number"
+            },
+            {
+              "width": "6%",
+              "source": "S7",
+              "title": "S7",
+              "type": "number"
+            },
+            {
+              "width": "6%",
+              "source": "S8",
+              "title": "S8",
+              "type": "number"
+            },
+            {
+              "width": "6%",
+              "source": "S9",
+              "title": "S9",
+              "type": "number"
+            },
+            {
+              "width": "6%",
+              "source": "S10",
+              "title": "S10",
+              "type": "number"
+            },
+            {
+              "width": "6%",
+              "source": "S11",
+              "title": "S11",
+              "type": "number"
+            },
+            {
+              "width": "6%",
+              "source": "S12",
+              "title": "S12",
+              "type": "number"
+            },
+            {
+              "width": "6%",
+              "source": "S13",
+              "title": "S13",
+              "type": "number"
+            },
+            {
+              "width": "6%",
+              "source": "S14",
+              "title": "S14",
+              "type": "number"
+            },
+            {
+              "width": "6%",
+              "source": "S15",
+              "title": "S15",
+              "type": "number"
+            },
+            {
+              "width": "6%",
+              "noEdit": "true",
+              "source": "individualCount",
+              "title": "Total",
+              "type": "number"
+            }
+          ],
+          "source": "observations",
+          "type": "table",
+          "userAddedRows": true,
+          "disableTableUpload": true
+        }
+      ],
+      "class": "output-section"
+    }
+  ]
+}

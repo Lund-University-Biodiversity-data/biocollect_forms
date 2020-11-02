@@ -1,0 +1,268 @@
+{
+  "modelName": "Punktlokal",
+  "title": "Punktlokal",
+  "record": true,
+  "dataModel": [
+    {
+      "dataType": "date",
+      "defaultValue": "${now}",
+      "name": "surveyDate",
+      "dwcAttribute": "eventDate",
+      "validate": "required"
+    },
+    {
+      "dataType": "text",
+      "name": "recordedBy",
+      "dwcAttribute": "recordedBy",
+      "validate": "required"
+    },
+    {
+      "dataType": "time",
+      "name": "surveyStartTime",
+      "dwcAttribute": "eventTime",
+      "validate": "required"
+    },
+    {
+      "dataType": "number",
+      "name": "percentageOfSunlight",
+      "validate": "required,min[0],max[100]"
+    },
+    {
+      "dataType": "number",
+      "name": "temperatureInDegreesCelcius",
+      "validate": "required,min[0],max[40]"
+    },
+    {
+      "dataType": "text",
+      "name": "windDirectionCategorical",
+      "constraints": [
+        "Norr",
+        "Nordost",
+        "Öster",
+        "Sydost",
+        "Syd",
+        "Sydväst",
+        "Väster",
+        "Nordväst",
+        "Vindstilla"
+      ]
+    },
+    {
+      "dataType": "text",
+      "name": "windSpeedKmPerHourCategorical",
+      "constraints": [
+        "0 (Rök stiger rakt upp)",
+        "1 (Knappt märkbar för känseln)",
+        "2 (Små löv rör sig)",
+        "3 (Små kvistar rör sig)",
+        "4 (Tunnare grenar rör sig)",
+        "5 (Mindre träd svajar)",
+        "6 (Stora grenar i rörelse)"
+      ],
+      "validate": "required"
+    },
+    {
+      "defaultAccuracy": 50,
+      "hideMyLocation": false,
+      "columns": [
+        {
+          "dwcAttribute": "verbatimLatitude",
+          "source": "locationLatitude"
+        },
+        {
+          "dwcAttribute": "verbatimLongitude",
+          "source": "locationLongitude"
+        },
+        {
+          "source": "Locality"
+        },
+        {
+          "source": "Accuracy"
+        },
+        {
+          "source": "Notes"
+        },
+        {
+          "source": "Source"
+        }
+      ],
+      "dataType": "geoMap",
+      "name": "location",
+      "dwcAttribute": "verbatimCoordinates",
+      "hideSiteSelection": true,
+      "zoomToProjectArea": true,
+      "validate": "required"
+    },
+    {
+      "dataType": "text",
+      "name": "notes",
+      "dwcAttribute": "eventRemarks"
+    },
+    {
+      "columns": [
+        {
+          "dataType": "species",
+          "name": "species",
+          "dwcAttribute": "scientificName",
+          "validate": "required"
+        },
+        {
+          "dataType": "number",
+          "name": "individualCount",
+          "dwcAttribute": "individualCount",
+          "validate": "required,min[0]"
+        }
+      ],
+      "dataType": "list",
+      "name": "observations"
+    }
+  ],
+  "viewModel": [
+    {
+      "type": "row",
+      "items": [
+        {
+          "computed": null,
+          "type": "col",
+          "items": [
+            {
+              "type": "row",
+              "items": [
+                {
+                  "boxed": true,
+                  "title": "Evenemangsdetaljer",
+                  "type": "section",
+                  "items": [
+                    {
+                      "computed": null,
+                      "type": "col",
+                      "items": [
+                        {
+                          "preLabel": "Datum",
+                          "computed": null,
+                          "source": "surveyDate",
+                          "type": "date"
+                        },
+                        {
+                          "preLabel": "Rapportör",
+                          "computed": null,
+                          "source": "recordedBy",
+                          "type": "text"
+                        },
+                        {
+                          "preLabel": "Starttid",
+                          "computed": null,
+                          "source": "surveyStartTime",
+                          "type": "time"
+                        },
+                        {
+                          "preLabel": "Solsken (%)",
+                          "computed": null,
+                          "source": "percentageOfSunlight",
+                          "type": "number"
+                        },
+                        {
+                          "preLabel": "Temperatur (°Celsius)",
+                          "computed": null,
+                          "source": "temperatureInDegreesCelcius",
+                          "type": "number"
+                        },
+                        {
+                          "preLabel": "Vindstyrka",
+                          "computed": null,
+                          "source": "windSpeedKmPerHourCategorical",
+                          "type": "selectOne"
+                        },
+                        {
+                          "preLabel": "Vindriktning",
+                          "computed": null,
+                          "source": "windDirectionCategorical",
+                          "type": "selectOne"
+                        }
+                      ]
+                    }
+                  ],
+                  "class": ""
+                },
+                {
+                  "boxed": true,
+                  "type": "section",
+                  "items": [
+                    {
+                      "allowHeaderWrap": "true",
+                      "computed": null,
+                      "columns": [
+                        {
+                          "width": "50%",
+                          "source": "species",
+                          "title": "Fjäril",
+                          "type": "autocomplete"
+                        },
+                        {
+                          "width": "40%",
+                          "source": "individualCount",
+                          "title": "Antal",
+                          "type": "number"
+                        }
+                      ],
+                      "userAddedRows": "true",
+                      "source": "observations",
+                      "type": "table",
+                      "disableTableUpload": true
+                    }
+                  ],
+                  "class": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "computed": null,
+          "type": "col",
+          "items": [
+            {
+              "computed": null,
+              "type": "row",
+              "items": [
+                {
+                  "boxed": true,
+                  "title": "Lokalnamn",
+                  "type": "section",
+                  "items": [
+                    {
+                      "includeNotes": false,
+                      "orientation": "vertical",
+                      "computed": null,
+                      "autoLocalitySearch": false,
+                      "readonly": true,
+                      "includeSource": false,
+                      "includeAccuracy": false,
+                      "hideSiteSelection": false,
+                      "source": "location",
+                      "type": "geoMap",
+                      "includeLocality": false
+                    }
+                  ],
+                  "class": ""
+                }
+              ]
+            },
+            {
+              "computed": null,
+              "type": "row",
+              "items": [
+                {
+                  "preLabel": "Kommentar",
+                  "computed": null,
+                  "source": "notes",
+                  "type": "textarea"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

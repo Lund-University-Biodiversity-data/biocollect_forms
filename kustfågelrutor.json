@@ -1,0 +1,543 @@
+{
+  "modelName": "Kustfagelrutor",
+  "record": "true",
+  "title": "Kustfagelrutor",
+  "dataModel": [
+    {
+      "dataType": "text",
+      "name": "recordedBy",
+      "dwcAttribute": "recordedBy",
+      "description": "The name of the person who led the survey event.",
+      "validate": "required"
+    },
+    {
+      "allowRowDelete": "true",
+      "columns": [
+        {
+          "dataType": "text",
+          "name": "helper"
+        }
+      ],
+      "dataType": "list",
+      "name": "helpers"
+    },
+    {
+      "defaultValue": "${now}",
+      "dataType": "date",
+      "name": "surveyDate",
+      "dwcAttribute": "eventDate",
+      "validate": "required"
+    },
+    {
+      "dataType": "time",
+      "name": "surveyStartTime",
+      "dwcAttribute": "eventTime",
+      "validate": "required"
+    },
+    {
+      "dataType": "time",
+      "name": "surveyFinishTime",
+      "dwcAttribute": "eventTime",
+      "validate": "required"
+    },
+    {
+      "dataType": "text",
+      "name": "eventRemarks",
+      "dwcAttribute": "eventRemarks",
+      "description": "Anteckningar om avvikelser, överhoppningar, mm"
+    },
+    {
+      "dataType": "text",
+      "name": "comments",
+      "dwcAttribute": "notes",
+      "description": "Anteckningar om fynd av döda fåglar."
+    },
+    {
+      "dataType": "text",
+      "name": "separateIslandWater",
+      "constraints": [
+        "ja",
+        "nej"
+      ],
+      "validate": "required"
+    },
+    {
+      "dataType": "text",
+      "name": "transectName",
+      "validate": "required"
+    },
+    {
+      "defaultAccuracy": 50,
+      "hideMyLocation": false,
+      "columns": [
+        {
+          "dwcAttribute": "verbatimLatitude",
+          "source": "locationLatitude"
+        },
+        {
+          "dwcAttribute": "verbatimLongitude",
+          "source": "locationLongitude"
+        },
+        {
+          "source": "Locality"
+        },
+        {
+          "source": "Accuracy"
+        },
+        {
+          "source": "Notes"
+        },
+        {
+          "source": "Source"
+        }
+      ],
+      "dataType": "geoMap",
+      "name": "location",
+      "hideSiteSelection": true,
+      "zoomToProjectArea": true,
+      "validate": "required"
+    },
+    {
+      "allowRowDelete": "true",
+      "columns": [
+        {
+          "dataType": "species",
+          "name": "species",
+          "dwcAttribute": "scientificName",
+          "validate": "required"
+        },
+        {
+          "dataType": "number",
+          "name": "island",
+          "validate": "min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "water",
+          "validate": "min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "individualCount",
+          "dwcAttribute": "individualCount",
+          "computed": {
+            "operation": "sum",
+            "dependents": [
+              "water",
+              "island"
+            ]
+          },
+          "validate": "required,min[0]"
+        }
+      ],
+      "dataType": "list",
+      "name": "observations"
+    },
+    {
+      "dataType": "stringList",
+      "name": "mammalObservations",
+      "constraints": [
+        "nej",
+        "mink",
+        "rödräv",
+        "grävling"
+      ],
+      "validate": "required"
+    },
+    {
+      "dataType": "text",
+      "name": "ducklingsCounted",
+      "constraints": [
+        "ja",
+        "nej"
+      ],
+      "validate": "required"
+    },
+    {
+      "dataType": "number",
+      "name": "ducklingCount"
+    },
+    {
+      "dataType": "number",
+      "name": "ducklingSize",
+      "constraints": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "dataType": "text",
+      "name": "statement",
+      "constraints": [
+        "ja",
+        "nej"
+      ],
+      "validate": "required"
+    },
+    {
+      "dataType": "text",
+      "name": "deviation"
+    }
+  ],
+  "viewModel": [
+    {
+      "type": "row",
+      "items": [
+        {
+          "source": "<h1>NATIONELL KUSTFÅGELÖVERVAKNING</h1> Notera att det på nästa flik ska göras noteringar angående landstigningar.",
+          "type": "literal"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "items": [
+        {
+          "type": "col",
+          "items": [
+            {
+              "boxed": true,
+              "title": "Allmän information",
+              "type": "section",
+              "items": [
+                {
+                  "computed": null,
+                  "type": "row",
+                  "items": [
+                    {
+                      "preLabel": "Huvudinventerare/ rapportör",
+                      "inline": true,
+                      "computed": null,
+                      "dataClass": "span8",
+                      "source": "recordedBy",
+                      "preLabelClass": "span4",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "columns": [
+                        {
+                          "title": "Medinventerare",
+                          "width": "90%",
+                          "source": "helper",
+                          "type": "text",
+                          "validate": "required"
+                        }
+                      ],
+                      "source": "helpers",
+                      "type": "table",
+                      "userAddedRows": true,
+                      "disableTableUpload": true
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "preLabel": "Inventeringsdatum",
+                      "inline": true,
+                      "computed": null,
+                      "dataClass": "span8",
+                      "source": "surveyDate",
+                      "preLabelClass": "span4",
+                      "type": "date"
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "preLabel": "Starttid",
+                      "inline": true,
+                      "computed": null,
+                      "dataClass": "span8",
+                      "source": "surveyStartTime",
+                      "preLabelClass": "span4",
+                      "type": "time"
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "preLabel": "Sluttid",
+                      "source": "surveyFinishTime",
+                      "type": "time"
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "preLabel": "Anteckningar om avvikelser, överhoppningar, mm",
+                      "inline": true,
+                      "computed": null,
+                      "dataClass": "span8",
+                      "source": "eventRemarks",
+                      "preLabelClass": "span4",
+                      "type": "textarea",
+                      "rows": 5
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "preLabel": "Anteckningar om fynd av döda fåglar",
+                      "inline": true,
+                      "computed": null,
+                      "dataClass": "span8",
+                      "source": "comments",
+                      "preLabelClass": "span4",
+                      "type": "textarea",
+                      "rows": 5
+                    }
+                  ]
+                }
+              ],
+              "class": ""
+            }
+          ],
+          "class": ""
+        },
+        {
+          "type": "col",
+          "items": [
+            {
+              "boxed": true,
+              "title": "Ruta",
+              "type": "section",
+              "items": [
+                {
+                  "computed": null,
+                  "type": "row",
+                  "items": [
+                    {
+                      "includeNotes": false,
+                      "orientation": "vertical",
+                      "computed": null,
+                      "autoLocalitySearch": true,
+                      "readonly": true,
+                      "includeSource": false,
+                      "includeAccuracy": false,
+                      "hideSiteSelection": false,
+                      "source": "location",
+                      "type": "geoMap",
+                      "includeLocality": false
+                    }
+                  ]
+                }
+              ],
+              "class": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "items": [
+        {
+          "boxed": true,
+          "title": "Fåglar (antal)",
+          "type": "section",
+          "items": [
+            {
+              "type": "row",
+              "items": [
+                {
+                  "source": "Totalsumman för en ruta och art ska alltid rapporteras, men detta kan göras på två sätt. Antingen kan totalsumman delas upp på ”Fåglar på ö” och ”Fåglar på öppet vatten” eller så rapporteras endast totalsumman.",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "preLabel": "Jag har i kolumnen \"Fåglar på öppet vatten\" lagt in summerade värden",
+                  "source": "separateIslandWater",
+                  "type": "selectOne"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "columns": [
+                    {
+                      "title": "Art",
+                      "width": "45%",
+                      "source": "species",
+                      "type": "autocomplete",
+                      "validate": "required"
+                    },
+                    {
+                      "width": "15%",
+                      "source": "island",
+                      "title": "Fåglar på ö",
+                      "type": "number"
+                    },
+                    {
+                      "width": "15%",
+                      "source": "water",
+                      "title": "Fåglar på öppet vatten",
+                      "type": "number"
+                    },
+                    {
+                      "width": "15%",
+                      "source": "individualCount",
+                      "title": "Total",
+                      "type": "number",
+                      "validate": "required,min[1]"
+                    }
+                  ],
+                  "source": "observations",
+                  "type": "table",
+                  "userAddedRows": true,
+                  "disableTableUpload": true
+                }
+              ]
+            },
+            { 
+              "type": "row",
+              "items":
+              [
+                {
+                  "type": "col",
+                  "items": [
+                    {
+                      "type": "row",
+                      "items":[
+                        {
+                          "source": "Totalsumman för en ruta och art ska alltid rapporteras, men detta kan göras på två sätt. Antingen kan totalsumman delas upp på \"Fåglar på ö\" och \"Fåglar på öppet vatten\" eller så rapporteras endast totalsumman.",
+                          "type": "literal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "items": [
+                        {
+                          "preLabel": "Däggdjur - har du sett eller sett spår av mink, rödräv, grävling?",
+                          "source": "mammalObservations",
+                          "computed": null,
+                          "type": "selectMany"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "items": [
+                        {
+                          "preLabel": "Har du räknat ejderungar?",
+                          "source": "ducklingsCounted",
+                          "type": "selectOne"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "items": [
+                        {
+                          "preLabel": "Ejderungar antal",
+                          "source": "ducklingCount",
+                          "type": "number"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "items": [
+                        {
+                          "preLabel": "Ejderungar stor",
+                          "source": "ducklingSize",
+                          "type": "selectOne"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "col",
+                  "items": [
+                    {
+                      "type": "row",
+                      "items": [
+                        {
+                        "type": "literal",
+                        "boxed": "true",
+                        "source": "Ejderungar räknas endast i de län där de regionalt ansvariga (oftast länsstyrelsen) meddelat att så ska göras.<br>
+                          Antal = antal inräknade ungar<br>
+                          Storlek = den vanligaste storleksklassen i en ruta enligt följande:
+                          <li>1 < 25% av den vuxnas storlek</li>
+                          <li>2 25-50 % av den vuxnas storlek</li>
+                          <li>3 50-75 % av den vuxnas storlek</li>
+                          <li>4 >75 % av den vuxnas storlek</li>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "class": "output-section"
+    },
+    {
+      "type": "row",
+      "items": [
+        {
+          "boxed": true,
+          "title": "Landstigning",
+          "type": "section",
+          "items": [
+            {
+              "type": "row",
+              "items": [
+                {
+                  "source": "<h4>Jag har landstigit de öar som markerats på de fältkartor som skickats ut av Svensk Fågeltaxering, alternativt de öar som ska landstigas enligt programmet \"Samordnad övervakning av häckande kustfågel i Bottniska viken\"</h4>",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "source": "statement",
+                  "type": "selectOne",
+                  "validate": "required"
+                },
+                {
+                  "source": "Om nej, beskriv avvikelsen",
+                  "type": "literal"
+                },
+                {
+                  "source": "deviation",
+                  "type": "textarea",
+                  "rows": 5
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "class": "output-section"
+    }
+  ]
+}

@@ -1,0 +1,1173 @@
+{
+    "modelName": "standardrutterna",
+    "record": true,
+    "title": "standardrutterna",
+    "dataModel": [
+      {
+        "dataType": "text",
+        "name": "recordedBy",
+        "dwcAttribute": "recordedBy",
+        "validate": "required"
+      },
+      {
+        "allowRowDelete": "true",
+        "columns": [
+          {
+            "dataType": "text",
+            "name": "helper"
+          }
+        ],
+        "dataType": "list",
+        "name": "helpers"
+      },
+      {
+        "defaultValue": "${now}",
+        "dataType": "date",
+        "name": "surveyDate",
+        "dwcAttribute": "eventDate",
+        "description": "The date on which the transect survey was done.",
+        "validate": "required"
+      },
+      {
+        "dataType": "time",
+        "name": "surveyStartTime",
+        "dwcAttribute": "eventTime",
+        "validate": "required"
+      },
+      {
+        "dataType": "time",
+        "name": "surveyFinishTime",
+        "validate": "required"
+      },
+      {
+        "dataType": "text",
+        "name": "isGpsUsed",
+        "constraints": [
+          "ja",
+          "nej"
+        ],
+        "validate": "required"
+      },
+      {
+        "dataType": "text",
+        "name": "eventRemarks",
+        "dwcAttribute": "eventRemarks",
+        "description": "Skriv gärna sådant du tror kommande inventerare kan ha nytta av"
+      },
+      {
+        "dataType": "text",
+        "name": "comments",
+        "dwcAttribute": "notes"
+      },
+      {
+        "defaultAccuracy": 50,
+        "hideMyLocation": false,
+        "columns": [
+          {
+            "dwcAttribute": "verbatimLatitude",
+            "source": "locationLatitude"
+          },
+          {
+            "dwcAttribute": "verbatimLongitude",
+            "source": "locationLongitude"
+          },
+          {
+            "source": "Locality"
+          },
+          {
+            "source": "Accuracy"
+          },
+          {
+            "source": "Notes"
+          },
+          {
+            "source": "Source"
+          }
+        ],
+        "dataType": "geoMap",
+        "name": "location",
+        "hideSiteSelection": false,
+        "zoomToProjectArea": true,
+        "validate": "required"
+      },
+      {
+        "allowRowDelete": false,
+        "columns": [
+          {
+            "dataType": "number",
+            "name": "TidP01",
+            "validate": "required"
+          },
+          {
+            "dataType": "number",
+            "name": "TidP02",
+            "validate": "required"
+          },
+          {
+            "dataType": "number",
+            "name": "TidP03",
+            "validate": "required"
+          },
+          {
+            "dataType": "number",
+            "name": "TidP04",
+            "validate": "required"
+          },
+          {
+            "dataType": "number",
+            "name": "TidP05",
+            "validate": "required"
+          },
+          {
+            "dataType": "number",
+            "name": "TidP06",
+            "validate": "required"
+          },
+          {
+            "dataType": "number",
+            "name": "TidP07",
+            "validate": "required"
+          },
+          {
+            "dataType": "number",
+            "name": "TidP08",
+            "validate": "required"
+          }
+        ],
+        "dataType": "list",
+        "name": "timeOfObservation"
+      },
+      {
+        "allowRowDelete": false,
+        "columns": [
+          {
+            "dataType": "number",
+            "name": "TidL01",
+            "validate": "required"
+          },
+          {
+            "dataType": "number",
+            "name": "TidL02",
+            "validate": "required"
+          },
+          {
+            "dataType": "number",
+            "name": "TidL03",
+            "validate": "required"
+          },
+          {
+            "dataType": "number",
+            "name": "TidL04",
+            "validate": "required"
+          },
+          {
+            "dataType": "number",
+            "name": "TidL05",
+            "validate": "required"
+          },
+          {
+            "dataType": "number",
+            "name": "TidL06",
+            "validate": "required"
+          },
+          {
+            "dataType": "number",
+            "name": "TidL07",
+            "validate": "required"
+          },
+          {
+            "dataType": "number",
+            "name": "TidL08",
+            "validate": "required"
+          }
+        ],
+        "dataType": "list",
+        "name": "minutesSpentObserving"
+      },
+      {
+        "allowRowDelete": false,
+        "description":"0 för oinventerad linje, 10 för hela, och ett tal mellan 1 och 9 för linjer som bara gjorts delvis",
+        "columns": [
+          {
+            "dataType": "number",
+            "name": "distanceOnL01",
+            "validate": "min[0],max[10]"
+          },
+          {
+            "dataType": "number",
+            "name": "distanceOnL02",
+            "validate": "min[0],max[10]"
+          },
+          {
+            "dataType": "number",
+            "name": "distanceOnL03",
+            "validate": "min[0],max[10]"
+          },
+          {
+            "dataType": "number",
+            "name": "distanceOnL04",
+            "validate": "min[0],max[10]"
+          },
+          {
+            "dataType": "number",
+            "name": "distanceOnL05",
+            "validate": "min[0],max[10]"
+          },
+          {
+            "dataType": "number",
+            "name": "distanceOnL06",
+            "validate": "min[0],max[10]"
+          },
+          {
+            "dataType": "number",
+            "name": "distanceOnL07",
+            "validate": "min[0],max[10]"
+          },
+          {
+            "dataType": "number",
+            "name": "distanceOnL08",
+            "validate": "min[0],max[10]"
+          }
+        ],
+        "dataType": "list",
+        "name": "distanceCovered"
+      },
+      {
+        "allowRowDelete": "true",
+        "columns": [
+          {
+            "dataType": "species",
+            "name": "species",
+            "dwcAttribute": "scientificName",
+            "validate": "required"
+          },
+          {
+            "dataType": "number",
+            "name": "P01"
+          },
+          {
+            "dataType": "number",
+            "name": "P02"
+          },
+          {
+            "dataType": "number",
+            "name": "P03"
+          },
+          {
+            "dataType": "number",
+            "name": "P04"
+          },
+          {
+            "dataType": "number",
+            "name": "P05"
+          },
+          {
+            "dataType": "number",
+            "name": "P06"
+          },
+          {
+            "dataType": "number",
+            "name": "P07"
+          },
+          {
+            "dataType": "number",
+            "name": "P08"
+          },
+          {
+            "dataType": "number",
+            "name": "L01"
+          },
+          {
+            "dataType": "number",
+            "name": "L02"
+          },
+          {
+            "dataType": "number",
+            "name": "L03"
+          },
+          {
+            "dataType": "number",
+            "name": "L04"
+          },
+          {
+            "dataType": "number",
+            "name": "L05"
+          },
+          {
+            "dataType": "number",
+            "name": "L06"
+          },
+          {
+            "dataType": "number",
+            "name": "L07"
+          },
+          {
+            "dataType": "number",
+            "name": "L08"
+          },
+          {
+            "dataType": "number",
+            "computed": {
+              "operation": "sum",
+              "dependents": [
+                "P01",
+                "P02",
+                "P03",
+                "P04",
+                "P05",
+                "P06",
+                "P07",
+                "P08"
+              ]
+            },
+            "name": "pointCount"
+          },
+          {
+            "dataType": "number",
+            "computed": {
+              "operation": "sum",
+              "dependents": [
+                "L01",
+                "L02",
+                "L03",
+                "L04",
+                "L05",
+                "L06",
+                "L07",
+                "L08"
+              ]
+            },
+            "name": "lineCount"
+          },
+          {
+            "dataType": "number",
+            "computed": {
+              "operation": "sum",
+              "dependents": [
+                "pointCount",
+                "lineCount"
+              ]
+            },
+            "name": "individualCount",
+            "dwcAttribute": "individualCount",
+            "validate": "required,min[1]"
+          }
+        ],
+        "dataType": "list",
+        "name": "observations"
+      },
+      {
+        "allowRowDelete": "true",
+        "columns": [
+          {
+            "dataType": "species",
+            "name": "species",
+            "dwcAttribute": "scientificName"
+          },
+          {
+            "dataType": "number",
+            "name": "P01"
+          },
+          {
+            "dataType": "number",
+            "name": "P02"
+          },
+          {
+            "dataType": "number",
+            "name": "P03"
+          },
+          {
+            "dataType": "number",
+            "name": "P04"
+          },
+          {
+            "dataType": "number",
+            "name": "P05"
+          },
+          {
+            "dataType": "number",
+            "name": "P06"
+          },
+          {
+            "dataType": "number",
+            "name": "P07"
+          },
+          {
+            "dataType": "number",
+            "name": "P08"
+          },
+          {
+            "dataType": "number",
+            "name": "L01"
+          },
+          {
+            "dataType": "number",
+            "name": "L02"
+          },
+          {
+            "dataType": "number",
+            "name": "L03"
+          },
+          {
+            "dataType": "number",
+            "name": "L04"
+          },
+          {
+            "dataType": "number",
+            "name": "L05"
+          },
+          {
+            "dataType": "number",
+            "name": "L06"
+          },
+          {
+            "dataType": "number",
+            "name": "L07"
+          },
+          {
+            "dataType": "number",
+            "name": "L08"
+          },
+          {
+            "dataType": "number",
+            "computed": {
+              "operation": "sum",
+              "dependents": [
+                "P01",
+                "P02",
+                "P03",
+                "P04",
+                "P05",
+                "P06",
+                "P07",
+                "P08"
+              ]
+            },
+            "name": "pointCount",
+            "dwcAttribute": "pointCount",
+            "validate": "required,min[0]"
+          },
+          {
+            "dataType": "number",
+            "computed": {
+              "operation": "sum",
+              "dependents": [
+                "L01",
+                "L02",
+                "L03",
+                "L04",
+                "L05",
+                "L06",
+                "L07",
+                "L08"
+              ]
+            },
+            "name": "lineCount",
+            "dwcAttribute": "lineCount",
+            "validate": "required,min[0]"
+          },
+          {
+            "dataType": "number",
+            "computed": {
+              "operation": "sum",
+              "dependents": [
+                "pointCount",
+                "lineCount"
+              ]
+            },
+            "name": "individualCount",
+            "dwcAttribute": "individualCount",
+            "validate": "required,min[1]"
+          }
+        ],
+        "dataType": "list",
+        "name": "mammalObservations"
+      }
+    ],
+    "viewModel": [
+      {
+        "type": "row",
+        "items": [
+          {
+            "source": "<h1>STANDARDRUTTERNA</h1>Resultatprotokoll från kombinerad punkt- och linjetaxering",
+            "type": "literal"
+          }
+        ]
+      },
+      {
+        "type": "row",
+        "items": [
+          {
+            "type": "col",
+            "items": [
+              {
+                "boxed": true,
+                "title": "Allmän information",
+                "type": "section",
+                "items": [
+                  {
+                    "computed": null,
+                    "type": "row",
+                    "items": [
+                      {
+                        "preLabel": "Huvudinventerare/ rapportör",
+                        "inline": true,
+                        "computed": null,
+                        "dataClass": "span8",
+                        "source": "recordedBy",
+                        "preLabelClass": "span4",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "row",
+                    "items": [
+                      {
+                        "columns": [
+                          {
+                            "title": "Medinventerare",
+                            "width": "90%",
+                            "source": "helper",
+                            "type": "text"
+                          }
+                        ],
+                        "source": "helpers",
+                        "type": "table",
+                        "userAddedRows": true,
+                        "disableTableUpload": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "row",
+                    "items": [
+                      {
+                        "preLabel": "Inventeringsdatum",
+                        "inline": true,
+                        "computed": null,
+                        "dataClass": "span8",
+                        "source": "surveyDate",
+                        "preLabelClass": "span4",
+                        "type": "date"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "row",
+                    "items": [
+                      {
+                        "preLabel": "Starttid",
+                        "inline": true,
+                        "computed": null,
+                        "dataClass": "span8",
+                        "source": "surveyStartTime",
+                        "preLabelClass": "span4",
+                        "type": "time"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "row",
+                    "items": [
+                      {
+                        "preLabel": "Sluttid",
+                        "source": "surveyFinishTime",
+                        "type": "time"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "row",
+                    "items": [
+                      {
+                        "preLabel": "Jag använde GPS",
+                        "source": "isGpsUsed",
+                        "type": "selectOne"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "row",
+                    "items": [
+                      {
+                        "preLabel": "Kommentarer - Noteringar om avvikelser, överhoppningar, pauser, svåra passager, annat rent praktiskt mm",
+                        "inline": true,
+                        "computed": null,
+                        "dataClass": "span8",
+                        "source": "eventRemarks",
+                        "preLabelClass": "span4",
+                        "type": "textarea",
+                        "rows": 5
+                      }
+                    ]
+                  },
+                  {
+                    "type": "row",
+                    "items": [
+                      {
+                        "preLabel": "Kommentarer - specifikt om observationer av fåglar och dägdjur",
+                        "inline": true,
+                        "computed": null,
+                        "dataClass": "span8",
+                        "source": "comments",
+                        "preLabelClass": "span4",
+                        "type": "textarea",
+                        "rows": 5
+                      }
+                    ]
+                  }
+                ],
+                "class": ""
+              }
+            ],
+            "class": ""
+          },
+          {
+            "type": "col",
+            "items": [
+              {
+                "boxed": true,
+                "title": "Rutt",
+                "type": "section",
+                "items": [
+                  {
+                    "computed": null,
+                    "type": "row",
+                    "items": [
+                      {
+                        "includeNotes": false,
+                        "orientation": "vertical",
+                        "computed": null,
+                        "autoLocalitySearch": true,
+                        "readonly": true,
+                        "includeSource": false,
+                        "includeAccuracy": false,
+                        "hideSiteSelection": false,
+                        "source": "location",
+                        "type": "geoMap",
+                        "includeLocality": false
+                      }
+                    ]
+                  }
+                ],
+                "class": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "row",
+        "items": [
+          {
+            "boxed": true,
+            "type": "section",
+            "items": [
+              {
+                "type": "row",
+                "items": [
+                  {
+                    "source": "<h4>Starttider för punkterna</h4>(ex. 410 för 04.10)",
+                    "type": "literal"
+                  }
+                ]
+              },
+              {
+                "type": "row",
+                "items": [
+                  {
+                    "columns": [
+                      {
+                        "width": "5%",
+                        "source": "TidP01",
+                        "title": "P01",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "TidP02",
+                        "title": "P02",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "TidP03",
+                        "title": "P03",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "TidP04",
+                        "title": "P04",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "TidP05",
+                        "title": "P05",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "TidP06",
+                        "title": "P06",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "TidP07",
+                        "title": "P07",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "TidP08",
+                        "title": "P08",
+                        "type": "number"
+                      }
+                    ],
+                    "source": "timeOfObservation",
+                    "type": "table",
+                    "userAddedRows": "false",
+                    "disableTableUpload": true
+                  }
+                ]
+              },
+              {
+                "type": "row",
+                "items": [
+                  {
+                    "source": "<h4>Minuter inventering per linje (riktvärde 30 min)</h4>",
+                    "type": "literal"
+                  }
+                ]
+              },
+              {
+                "type": "row",
+                "items": [
+                  {
+                    "columns": [
+                      {
+                        "width": "5%",
+                        "source": "TidL01",
+                        "title": "L01",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "TidL02",
+                        "title": "L02",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "TidL03",
+                        "title": "L03",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "TidL04",
+                        "title": "L04",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "TidL05",
+                        "title": "L05",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "TidL06",
+                        "title": "L06",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "TidL07",
+                        "title": "L07",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "TidL08",
+                        "title": "L08",
+                        "type": "number"
+                      }
+                    ],
+                    "source": "minutesSpentObserving",
+                    "type": "table",
+                    "userAddedRows": "false",
+                    "disableTableUpload": true
+                  }
+                ]
+              },
+              {
+                "type": "row",
+                "items": [
+                  {
+                    "source": "<h3>Ange i vilken utsträckning linjerna inventerats </h3>Fyll i hur många tiondelar av varje linje som inventerats.",
+                    "type": "literal"
+                  }
+                ]
+              },
+              {
+                "type": "row",
+                "items": [
+                  {
+                    "columns": [
+                      {
+                        "width": "5%",
+                        "source": "distanceOnL01",
+                        "title": "L01",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "distanceOnL02",
+                        "title": "L02",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "distanceOnL03",
+                        "title": "L03",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "distanceOnL04",
+                        "title": "L04",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "distanceOnL05",
+                        "title": "L05",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "distanceOnL06",
+                        "title": "L06",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "distanceOnL07",
+                        "title": "L07",
+                        "type": "number"
+                      },
+                      {
+                        "width": "5%",
+                        "source": "distanceOnL08",
+                        "title": "L08",
+                        "type": "number"
+                      }
+                    ],
+                    "source": "distanceCovered",
+                    "type": "table",
+                    "userAddedRows": "false",
+                    "disableTableUpload": true
+                  }
+                ]
+              },
+              {
+                "type": "row",
+                "items": [
+                  {
+                    "source": "<h3>Fåglar (antal)</h3>",
+                    "type": "literal"
+                  }
+                ]
+              },
+              {
+                "type": "row",
+                "items": [
+                  {
+                    "columns": [
+                      {
+                        "title": "Art",
+                        "width": "20%",
+                        "source": "species",
+                        "type": "autocomplete"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P01",
+                        "title": "P01",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P02",
+                        "title": "P02",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P03",
+                        "title": "P03",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P04",
+                        "title": "P04",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P05",
+                        "title": "P05",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P06",
+                        "title": "P06",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P07",
+                        "title": "P07",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P08",
+                        "title": "P08",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L01",
+                        "title": "L01",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L02",
+                        "title": "L02",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L03",
+                        "title": "L03",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L04",
+                        "title": "L04",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L05",
+                        "title": "L05",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L06",
+                        "title": "L06",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L07",
+                        "title": "L07",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L08",
+                        "title": "L08",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "noEdit": "true",
+                        "source": "pointCount",
+                        "title": "P01-08",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "noEdit": "true",
+                        "source": "lineCount",
+                        "title": "L01-08",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "noEdit": "true",
+                        "source": "individualCount",
+                        "title": "Total",
+                        "type": "number"
+                      }
+                    ],
+                    "source": "observations",
+                    "type": "table",
+                    "userAddedRows": "true",
+                    "disableTableUpload": true
+                  }
+                ]
+              },
+              {
+                "type": "row",
+                "items": [
+                  {
+                    "source": "<h3>Däggdjur (antal)</h3>",
+                    "type": "literal"
+                  }
+                ]
+              },
+              {
+                "type": "row",
+                "items": [
+                  {
+                    "columns": [
+                      {
+                        "title": "Art",
+                        "width": "20%",
+                        "source": "species",
+                        "type": "autocomplete"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P01",
+                        "title": "P01",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P02",
+                        "title": "P02",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P03",
+                        "title": "P03",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P04",
+                        "title": "P04",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P05",
+                        "title": "P05",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P06",
+                        "title": "P06",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P07",
+                        "title": "P07",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "P08",
+                        "title": "P08",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L01",
+                        "title": "L01",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L02",
+                        "title": "L02",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L03",
+                        "title": "L03",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L04",
+                        "title": "L04",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L05",
+                        "title": "L05",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L06",
+                        "title": "L06",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L07",
+                        "title": "L07",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "source": "L08",
+                        "title": "L08",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "noEdit": "true",
+                        "source": "pointCount",
+                        "title": "Total points",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "noEdit": "true",
+                        "source": "lineCount",
+                        "title": "Total lines",
+                        "type": "number"
+                      },
+                      {
+                        "width": "8%",
+                        "noEdit": "true",
+                        "source": "individualCount",
+                        "title": "Total",
+                        "type": "number"
+                      }
+                    ],
+                    "source": "mammalObservations",
+                    "type": "table",
+                    "userAddedRows": true,
+                    "disableTableUpload": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "class": "output-section"
+      }
+    ]
+  }
