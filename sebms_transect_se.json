@@ -47,7 +47,7 @@
           "condition": "percentageOfSunlight < '0'",
           "type": "conditional_validation",
           "value": {
-            "validate":"required,custom[integer],min[0],max[100]",
+            "validate":"custom[integer],min[0],max[100]",
             "message":"Minsta möjliga värde är 0"
           }
         }
@@ -62,7 +62,7 @@
           "condition": "percentageOfSunlight < '0'",
           "type": "conditional_validation",
           "value": {
-            "validate":"required,custom[integer],min[0],max[40]",
+            "validate":"custom[integer],min[0],max[40]",
             "message":"Minsta möjliga värde är 0"
           }
         }
@@ -145,77 +145,92 @@
         {
           "dataType": "number",
           "name": "S1",
-          "validate":"min[0]"
+          "validate":"min[0]",
+          "defaultValue": ""
         },
         {
           "dataType": "number",
           "name": "S2",
-          "validate":"min[0]"
+          "validate":"min[0]",
+          "defaultValue": ""
         },
         {
           "dataType": "number",
           "name": "S3",
-          "validate":"min[0]"
+          "validate":"min[0]",
+          "defaultValue": ""
         },
         {
           "dataType": "number",
           "name": "S4",
-          "validate":"min[0]"
+          "validate":"min[0]",
+          "defaultValue": ""
         },
         {
           "dataType": "number",
           "name": "S5",
-          "validate":"min[0]"
+          "validate":"min[0]",
+          "defaultValue": ""
         },
         {
           "dataType": "number",
           "name": "S6",
-          "validate":"min[0]"
+          "validate":"min[0]",
+          "defaultValue": ""
         },
         {
           "dataType": "number",
           "name": "S7",
-          "validate":"min[0]"
+          "validate":"min[0]",
+          "defaultValue": ""
         },
         {
           "dataType": "number",
           "name": "S8",
-          "validate":"min[0]"
+          "validate":"min[0]",
+          "defaultValue": ""
         },
         {
           "dataType": "number",
           "name": "S9",
-          "validate":"min[0]"
+          "validate":"min[0]",
+          "defaultValue": ""
         },
         {
           "dataType": "number",
           "name": "S10",
-          "validate":"min[0]"
+          "validate":"min[0]",
+          "defaultValue": ""
         },
         {
           "dataType": "number",
           "name": "S11",
-          "validate":"min[0]"
+          "validate":"min[0]",
+          "defaultValue": ""
         },
         {
           "dataType": "number",
           "name": "S12",
-          "validate":"min[0]"
+          "validate":"min[0]",
+          "defaultValue": ""
         },
         {
           "dataType": "number",
           "name": "S13",
-          "validate":"min[0]"
+          "validate":"min[0]",
+          "defaultValue": ""
         },
         {
           "dataType": "number",
           "name": "S14",
-          "validate":"min[0]"
+          "validate":"min[0]",
+          "defaultValue": ""
         },
         {
           "dataType": "number",
           "name": "S15",
-          "validate":"min[0]"
+          "validate":"min[0]",
+          "defaultValue": ""
         },
         {
           "dataType": "number",
@@ -405,98 +420,98 @@
               "width": "6%",
               "source": "S1",
               "title": "S1",
-              "type": "text"
+              "type": "number"
             },
             {
               "width": "6%",
               "source": "S2",
               "title": "S2",
-              "type": "text"
+              "type": "number"
             },
             {
               "width": "6%",
               "source": "S3",
               "title": "S3",
-              "type": "text"
+              "type": "number"
             },
             {
               "width": "6%",
               "source": "S4",
               "title": "S4",
-              "type": "text"
+              "type": "number"
             },
             {
               "width": "6%",
               "source": "S5",
               "title": "S5",
-              "type": "text"
+              "type": "number"
             },
             {
               "width": "6%",
               "source": "S6",
               "title": "S6",
-              "type": "text"
+              "type": "number"
             },
             {
               "width": "6%",
               "source": "S7",
               "title": "S7",
-              "type": "text"
+              "type": "number"
             },
             {
               "width": "6%",
               "source": "S8",
               "title": "S8",
-              "type": "text"
+              "type": "number"
             },
             {
               "width": "6%",
               "source": "S9",
               "title": "S9",
-              "type": "text"
+              "type": "number"
             },
             {
               "width": "6%",
               "source": "S10",
               "title": "S10",
-              "type": "text"
+              "type": "number"
             },
             {
               "width": "6%",
               "source": "S11",
               "title": "S11",
-              "type": "text"
+              "type": "number"
             },
             {
               "width": "6%",
               "source": "S12",
               "title": "S12",
-              "type": "text"
+              "type": "number"
             },
             {
               "width": "6%",
               "source": "S13",
               "title": "S13",
-              "type": "text"
+              "type": "number"
             },
             {
               "width": "6%",
               "source": "S14",
               "title": "S14",
-              "type": "text"
+              "type": "number"
             },
             {
               "width": "6%",
               "source": "S15",
               "title": "S15",
-              "type": "text"
+              "type": "number"
             },
             {
               "width": "6%",
               "noEdit": "true",
               "source": "individualCount",
               "title": "Total",
-              "type": "text"
+              "type": "number"
             }
           ],
           "source": "observations",

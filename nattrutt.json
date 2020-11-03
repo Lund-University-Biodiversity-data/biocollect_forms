@@ -1067,7 +1067,7 @@
                     "type": "row",
                     "items": [
                       {
-                        "preLabel": "Temperatur",
+                        "preLabel": "Temperatur (grader C)",
                         "source": "temperature",
                         "type": "number"
                       }
@@ -1080,16 +1080,6 @@
                         "preLabel": "Vind (m/s)",
                         "source": "wind",
                         "type": "number"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "row",
-                    "items": [
-                      {
-                        "preLabel": "Precipitation",
-                        "source": "precipitation",
-                        "type": "selectOne"
                       }
                     ]
                   },
@@ -1112,7 +1102,7 @@
                     "type": "row",
                     "items": [
                       {
-                        "preLabel": "Kommentarer - specifikt om observationer av fåglar, dägdjur och groddjur",
+                        "preLabel": "Kommentarer - specifikt om observationer av fåglar, däggdjur och groddjur",
                         "inline": true,
                         "computed": null,
                         "dataClass": "span8",
@@ -1470,7 +1460,7 @@
                 "type": "row",
                 "items": [
                   {
-                    "source": "<h4>Ugglekullar (antal)</h4>",
+                    "source": "<h4>Ugglekullar (antal kullar)</h4>",
                     "type": "literal"
                   }
                 ]
@@ -1625,7 +1615,7 @@
                 "type": "row",
                 "items": [
                   {
-                    "source": "<h4>Däggdjur (antal)</h4>",
+                    "source": "<h4>Däggdjur på punkterna (antal)</h4>",
                     "type": "literal"
                   }
                 ]

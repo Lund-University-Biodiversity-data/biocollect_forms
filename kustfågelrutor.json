@@ -186,7 +186,7 @@
       "type": "row",
       "items": [
         {
-          "source": "<h1>NATIONELL KUSTFÅGELÖVERVAKNING</h1> Notera att det på nästa flik ska göras noteringar angående landstigningar.",
+          "source": "<h1>NATIONELL KUSTFÅGELÖVERVAKNING</h1>",
           "type": "literal"
         }
       ]
@@ -420,18 +420,9 @@
                   "items": [
                     {
                       "type": "row",
-                      "items":[
-                        {
-                          "source": "Totalsumman för en ruta och art ska alltid rapporteras, men detta kan göras på två sätt. Antingen kan totalsumman delas upp på \"Fåglar på ö\" och \"Fåglar på öppet vatten\" eller så rapporteras endast totalsumman.",
-                          "type": "literal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "row",
                       "items": [
                         {
-                          "preLabel": "Däggdjur - har du sett eller sett spår av mink, rödräv, grävling?",
+                          "preLabel": "Mink, rödräv och grävling – har du sett någon av dessa arter, eller spår av dem?",
                           "source": "mammalObservations",
                           "computed": null,
                           "type": "selectMany"
@@ -462,7 +453,7 @@
                       "type": "row",
                       "items": [
                         {
-                          "preLabel": "Ejderungar stor",
+                          "preLabel": "Ejderungar storlek",
                           "source": "ducklingSize",
                           "type": "selectOne"
                         }

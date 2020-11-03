@@ -24,13 +24,33 @@
     },
     {
       "dataType": "number",
+      "defaultValue": "",
       "name": "percentageOfSunlight",
-      "validate": "required,min[0],max[100]"
+      "behaviour": [
+        {
+          "condition": "percentageOfSunlight < '0'",
+          "type": "conditional_validation",
+          "value": {
+            "validate":"custom[integer],min[0],max[100]",
+            "message":"Minsta möjliga värde är 0"
+          }
+        }
+      ]
     },
     {
       "dataType": "number",
       "name": "temperatureInDegreesCelcius",
-      "validate": "required,min[0],max[40]"
+      "defaultValue": "",
+      "behaviour": [
+        {
+          "condition": "percentageOfSunlight < '0'",
+          "type": "conditional_validation",
+          "value": {
+            "validate":"custom[integer],min[0],max[40]",
+            "message":"Minsta möjliga värde är 0"
+          }
+        }
+      ]
     },
     {
       "dataType": "text",
@@ -110,7 +130,8 @@
           "dataType": "number",
           "name": "individualCount",
           "dwcAttribute": "individualCount",
-          "validate": "required,min[0]"
+          "validate": "required,min[0]",
+          "defaultValue": ""
         }
       ],
       "dataType": "list",
@@ -178,6 +199,18 @@
                           "computed": null,
                           "source": "windDirectionCategorical",
                           "type": "selectOne"
+                        },
+                        {
+                          "computed": null,
+                          "type": "row",
+                          "items": [
+                            {
+                              "preLabel": "Kommentar",
+                              "computed": null,
+                              "source": "notes",
+                              "type": "textarea"
+                            }
+                          ]
                         }
                       ]
                     }
@@ -193,13 +226,13 @@
                       "computed": null,
                       "columns": [
                         {
-                          "width": "50%",
+                          "width": "75%",
                           "source": "species",
                           "title": "Fjäril",
                           "type": "autocomplete"
                         },
                         {
-                          "width": "40%",
+                          "width": "20%",
                           "source": "individualCount",
                           "title": "Antal",
                           "type": "number"
@@ -245,18 +278,6 @@
                     }
                   ],
                   "class": ""
-                }
-              ]
-            },
-            {
-              "computed": null,
-              "type": "row",
-              "items": [
-                {
-                  "preLabel": "Kommentar",
-                  "computed": null,
-                  "source": "notes",
-                  "type": "textarea"
                 }
               ]
             }

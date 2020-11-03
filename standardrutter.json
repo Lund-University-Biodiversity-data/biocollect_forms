@@ -25,7 +25,6 @@
         "dataType": "date",
         "name": "surveyDate",
         "dwcAttribute": "eventDate",
-        "description": "The date on which the transect survey was done.",
         "validate": "required"
       },
       {
@@ -361,7 +360,7 @@
         "columns": [
           {
             "dataType": "species",
-            "name": "species",
+            "name": "mammalSpecies",
             "dwcAttribute": "scientificName"
           },
           {
@@ -606,7 +605,7 @@
                     "type": "row",
                     "items": [
                       {
-                        "preLabel": "Kommentarer - specifikt om observationer av fåglar och dägdjur",
+                        "preLabel": "Kommentarer - specifikt om observationer av fåglar och däggdjur",
                         "inline": true,
                         "computed": null,
                         "dataClass": "span8",
@@ -1036,7 +1035,7 @@
                       {
                         "title": "Art",
                         "width": "20%",
-                        "source": "species",
+                        "source": "mammalSpecies",
                         "type": "autocomplete"
                       },
                       {
