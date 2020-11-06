@@ -58,16 +58,6 @@
     },
     {
       "dataType": "text",
-      "name": "isGpsUsed",
-      "description": "Jag använde GPS",
-      "constraints": [
-        "yes",
-        "no"
-      ],
-      "validate": "required"
-    },
-    {
-      "dataType": "text",
       "name": "transport",
       "description": "",
       "constraints": [
@@ -364,16 +354,6 @@
                       "preLabel": "Sluttid",
                       "source": "surveyFinishTime",
                       "type": "time"
-                    }
-                  ]
-                },
-                {
-                  "type": "row",
-                  "items": [
-                    {
-                      "preLabel": "Jag använde GPS",
-                      "source": "isGpsUsed",
-                      "type": "selectOne"
                     }
                   ]
                 },
