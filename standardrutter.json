@@ -360,7 +360,7 @@
         "columns": [
           {
             "dataType": "species",
-            "name": "mammalSpecies",
+            "name": "speciesMammals",
             "dwcAttribute": "scientificName"
           },
           {
@@ -1035,7 +1035,7 @@
                       {
                         "title": "Art",
                         "width": "20%",
-                        "source": "mammalSpecies",
+                        "source": "speciesMammals",
                         "type": "autocomplete"
                       },
                       {
