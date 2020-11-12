@@ -590,11 +590,11 @@
                     "type": "row",
                     "items": [
                       {
-                        "preLabel": "Kommentarer - Noteringar om avvikelser, överhoppningar, pauser, svåra passager, annat rent praktiskt mm",
+                        "preLabel": "Kommentarer - specifikt om observationer av fåglar och däggdjur",
                         "inline": true,
                         "computed": null,
                         "dataClass": "span8",
-                        "source": "eventRemarks",
+                        "source": "comments",
                         "preLabelClass": "span4",
                         "type": "textarea",
                         "rows": 5
@@ -605,11 +605,11 @@
                     "type": "row",
                     "items": [
                       {
-                        "preLabel": "Kommentarer - specifikt om observationer av fåglar och däggdjur",
+                        "preLabel": "Kommentarer - Noteringar om avvikelser, överhoppningar, pauser, svåra passager, annat rent praktiskt mm",
                         "inline": true,
                         "computed": null,
                         "dataClass": "span8",
-                        "source": "comments",
+                        "source": "eventRemarks",
                         "preLabelClass": "span4",
                         "type": "textarea",
                         "rows": 5
@@ -680,49 +680,49 @@
                       {
                         "width": "5%",
                         "source": "TidP01",
-                        "title": "P01",
+                        "title": "P1",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "TidP02",
-                        "title": "P02",
+                        "title": "P2",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "TidP03",
-                        "title": "P03",
+                        "title": "P3",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "TidP04",
-                        "title": "P04",
+                        "title": "P4",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "TidP05",
-                        "title": "P05",
+                        "title": "P5",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "TidP06",
-                        "title": "P06",
+                        "title": "P6",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "TidP07",
-                        "title": "P07",
+                        "title": "P7",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "TidP08",
-                        "title": "P08",
+                        "title": "P8",
                         "type": "number"
                       }
                     ],
@@ -750,49 +750,49 @@
                       {
                         "width": "5%",
                         "source": "TidL01",
-                        "title": "L01",
+                        "title": "L1",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "TidL02",
-                        "title": "L02",
+                        "title": "L2",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "TidL03",
-                        "title": "L03",
+                        "title": "L3",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "TidL04",
-                        "title": "L04",
+                        "title": "L4",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "TidL05",
-                        "title": "L05",
+                        "title": "L5",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "TidL06",
-                        "title": "L06",
+                        "title": "L6",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "TidL07",
-                        "title": "L07",
+                        "title": "L7",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "TidL08",
-                        "title": "L08",
+                        "title": "L8",
                         "type": "number"
                       }
                     ],
@@ -820,49 +820,49 @@
                       {
                         "width": "5%",
                         "source": "distanceOnL01",
-                        "title": "L01",
+                        "title": "L1",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "distanceOnL02",
-                        "title": "L02",
+                        "title": "L2",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "distanceOnL03",
-                        "title": "L03",
+                        "title": "L3",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "distanceOnL04",
-                        "title": "L04",
+                        "title": "L4",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "distanceOnL05",
-                        "title": "L05",
+                        "title": "L5",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "distanceOnL06",
-                        "title": "L06",
+                        "title": "L6",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "distanceOnL07",
-                        "title": "L07",
+                        "title": "L7",
                         "type": "number"
                       },
                       {
                         "width": "5%",
                         "source": "distanceOnL08",
-                        "title": "L08",
+                        "title": "L8",
                         "type": "number"
                       }
                     ],
@@ -896,111 +896,111 @@
                       {
                         "width": "8%",
                         "source": "P01",
-                        "title": "P01",
+                        "title": "P1",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "P02",
-                        "title": "P02",
+                        "title": "P2",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "P03",
-                        "title": "P03",
+                        "title": "P3",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "P04",
-                        "title": "P04",
+                        "title": "P4",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "P05",
-                        "title": "P05",
+                        "title": "P5",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "P06",
-                        "title": "P06",
+                        "title": "P6",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "P07",
-                        "title": "P07",
+                        "title": "P7",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "P08",
-                        "title": "P08",
+                        "title": "P8",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L01",
-                        "title": "L01",
+                        "title": "L1",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L02",
-                        "title": "L02",
+                        "title": "L2",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L03",
-                        "title": "L03",
+                        "title": "L3",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L04",
-                        "title": "L04",
+                        "title": "L4",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L05",
-                        "title": "L05",
+                        "title": "L5",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L06",
-                        "title": "L06",
+                        "title": "L6",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L07",
-                        "title": "L07",
+                        "title": "L7",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L08",
-                        "title": "L08",
+                        "title": "L8",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "noEdit": "true",
                         "source": "pointCount",
-                        "title": "P01-08",
+                        "title": "Summa P1-8",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "noEdit": "true",
                         "source": "lineCount",
-                        "title": "L01-08",
+                        "title": "Summa L1-8",
                         "type": "number"
                       },
                       {
@@ -1041,111 +1041,111 @@
                       {
                         "width": "8%",
                         "source": "P01",
-                        "title": "P01",
+                        "title": "P1",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "P02",
-                        "title": "P02",
+                        "title": "P2",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "P03",
-                        "title": "P03",
+                        "title": "P3",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "P04",
-                        "title": "P04",
+                        "title": "P4",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "P05",
-                        "title": "P05",
+                        "title": "P5",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "P06",
-                        "title": "P06",
+                        "title": "P6",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "P07",
-                        "title": "P07",
+                        "title": "P7",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "P08",
-                        "title": "P08",
+                        "title": "P8",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L01",
-                        "title": "L01",
+                        "title": "L1",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L02",
-                        "title": "L02",
+                        "title": "L2",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L03",
-                        "title": "L03",
+                        "title": "L3",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L04",
-                        "title": "L04",
+                        "title": "L4",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L05",
-                        "title": "L05",
+                        "title": "L5",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L06",
-                        "title": "L06",
+                        "title": "L6",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L07",
-                        "title": "L07",
+                        "title": "L7",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "source": "L08",
-                        "title": "L08",
+                        "title": "L8",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "noEdit": "true",
                         "source": "pointCount",
-                        "title": "Total points",
+                        "title": "Summa P1-8",
                         "type": "number"
                       },
                       {
                         "width": "8%",
                         "noEdit": "true",
                         "source": "lineCount",
-                        "title": "Total lines",
+                        "title": "Summa L1-8",
                         "type": "number"
                       },
                       {
