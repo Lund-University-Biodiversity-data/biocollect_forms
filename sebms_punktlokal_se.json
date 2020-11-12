@@ -23,6 +23,13 @@
       "validate": "required"
     },
     {
+      "dataType": "time",
+      "name": "surveyFinishTime",
+      "computed": {
+        "expression": "surveyStartTime + 15"
+      }
+    },
+    {
       "dataType": "number",
       "defaultValue": "",
       "name": "percentageOfSunlight",
@@ -71,14 +78,15 @@
       "dataType": "text",
       "name": "windSpeedKmPerHourCategorical",
       "constraints": [
-        "0 (Rök stiger rakt upp)",
-        "1 (Knappt märkbar för känseln)",
-        "2 (Små löv rör sig)",
-        "3 (Små kvistar rör sig)",
-        "4 (Tunnare grenar rör sig)",
-        "5 (Mindre träd svajar)",
-        "6 (Stora grenar i rörelse)"
+        1, 2, 3, 4, 5, 6
       ],
+      "description":"0 - Rök stiger rakt upp<br>
+      1 - Knappt märkbar för känseln<br>
+      2 - Små löv rör sig<br>
+      3 - Små kvistar rör sig<br>
+      4 - Tunnare grenar rör sig<br>
+      5 - Mindre träd svajar<br>
+      6 - Stora grenar i rörelse",
       "validate": "required"
     },
     {
@@ -174,6 +182,11 @@
                           "preLabel": "Starttid",
                           "computed": null,
                           "source": "surveyStartTime",
+                          "type": "time"
+                        },
+                        {
+                          "preLabel": "Sluttid",
+                          "source": "surveyFinishTime",
                           "type": "time"
                         },
                         {
