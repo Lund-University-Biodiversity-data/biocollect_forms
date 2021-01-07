@@ -605,7 +605,7 @@
                     "type": "row",
                     "items": [
                       {
-                        "preLabel": "Kommentarer - Noteringar om avvikelser, överhoppningar, pauser, svåra passager, annat rent praktiskt mm",
+                        "preLabel": "Kommentarer - specifikt om praktiska aspekter, till exempel avvikelser, överhoppningar, pauser, svåra passager mm",
                         "inline": true,
                         "computed": null,
                         "dataClass": "span8",
@@ -1002,13 +1002,6 @@
                         "source": "lineCount",
                         "title": "Summa L1-8",
                         "type": "number"
-                      },
-                      {
-                        "width": "8%",
-                        "noEdit": "true",
-                        "source": "individualCount",
-                        "title": "Total",
-                        "type": "number"
                       }
                     ],
                     "source": "observations",
@@ -1146,13 +1139,6 @@
                         "noEdit": "true",
                         "source": "lineCount",
                         "title": "Summa L1-8",
-                        "type": "number"
-                      },
-                      {
-                        "width": "8%",
-                        "noEdit": "true",
-                        "source": "individualCount",
-                        "title": "Total",
                         "type": "number"
                       }
                     ],
