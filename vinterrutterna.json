@@ -57,25 +57,20 @@
       "type": "number"
     },
     {
-      "dataType": "text",
+      "dataType": "number",
       "name": "transport",
-      "description": "",
+      "description":  "1 = till fots eller på skidor, 2= cykel eller moped, 3 = bil eller MC, 4 = annat",
       "constraints": [
-        "till fots eller på skidor",
-        "cykel eller moped",
-        "bil eller MC",
-        "annat"
+        1, 2, 3, 4
       ],
       "validate": "required"
     },
     {
-      "dataType": "text",
-      "name": "snö",
+      "dataType": "number",
+      "name": "snow",
+      "description":"1 = barmark, 2 = snötäckt mark, 3 = mycket tunt snötäcke eller fläckvis snötäcke",
       "constraints": [
-        "barmark",
-        "snötäckt mark",
-        "mycket tunt snötäcke eller fläckvis snötäcke"
-      ],
+        1, 2, 3],
       "validate": "required"
     },
     {
@@ -244,6 +239,10 @@
           "name": "individualCount",
           "dwcAttribute": "individualCount",
           "validate": "required,min[0]"
+        },
+        {
+          "dataType": "number",
+          "name": "pk"
         }
       ],
       "dataType": "list",
@@ -382,7 +381,7 @@
                   "items": [
                     {
                       "preLabel": "Snö",
-                      "source": "snö",
+                      "source": "snow",
                       "type": "selectOne"
                     }
                   ]
@@ -478,127 +477,134 @@
                       "width": "6%",
                       "source": "P01",
                       "title": "P1",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P02",
                       "title": "P2",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P03",
                       "title": "P3",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P04",
                       "title": "P4",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P05",
                       "title": "P5",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P06",
                       "title": "P6",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P07",
                       "title": "P7",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P08",
                       "title": "P8",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P09",
                       "title": "P9",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P10",
                       "title": "P10",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P11",
                       "title": "P11",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P12",
                       "title": "P12",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P13",
                       "title": "P13",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P14",
                       "title": "P14",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P15",
                       "title": "P15",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P16",
                       "title": "P16",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P17",
                       "title": "P17",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P18",
                       "title": "P18",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P19",
                       "title": "P19",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "source": "P20",
                       "title": "P20",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "6%",
                       "noEdit": "true",
                       "source": "individualCount",
                       "title": "Summa P1-20",
+                      "type": "number"
+                    },
+                    {
+                      "width": "6%",
+                      "noEdit": "true",
+                      "source": "pk",
+                      "title": "PK",
                       "type": "number"
                     }
                   ],

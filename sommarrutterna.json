@@ -44,15 +44,10 @@
         "type": "number"
       },
       {
-        "dataType": "text",
+        "dataType": "number",
         "name": "transport",
-        "description": "",
-        "constraints": [
-          "till fots eller på skidor",
-          "cykel eller moped",
-          "bil eller MC",
-          "annat"
-        ],
+        "constraints": [1, 2, 3, 4],
+        "description": "1 = till fots eller på skidor, 2 = cykel eller moped, 3 = bil eller MC, 4 = annat",
         "validate": "required"
       },
       {
@@ -232,7 +227,7 @@
         "type": "row",
         "items": [
           {
-            "source": "<h1>SOMMARPUNKTRUTTERNA</h1>SOMMARFÅGELRÄKNINGEN",
+            "source": "<h1>SOMMARPUNKTRUTTERNA</h1>",
             "type": "literal"
           }
         ]
