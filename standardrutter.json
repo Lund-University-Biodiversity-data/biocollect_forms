@@ -667,7 +667,7 @@
                 "type": "row",
                 "items": [
                   {
-                    "source": "<h4>Starttider för punkterna</h4>(ex. 410 för 04.10)",
+                    "source": "<h4>Starttider för punkterna</h4>(ex. <b>410</b> för 04.10, <b>30</b> för 00.30 och <b>145</b> för 1.45)",
                     "type": "literal"
                   }
                 ]
