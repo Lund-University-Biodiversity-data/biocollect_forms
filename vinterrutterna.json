@@ -474,134 +474,112 @@
                       "type": "autocomplete"
                     },
                     {
-                      "width": "6%",
                       "source": "P01",
                       "title": "P1",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P02",
                       "title": "P2",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P03",
                       "title": "P3",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P04",
                       "title": "P4",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P05",
                       "title": "P5",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P06",
                       "title": "P6",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P07",
                       "title": "P7",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P08",
                       "title": "P8",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P09",
                       "title": "P9",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P10",
                       "title": "P10",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P11",
                       "title": "P11",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P12",
                       "title": "P12",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P13",
                       "title": "P13",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P14",
                       "title": "P14",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P15",
                       "title": "P15",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P16",
                       "title": "P16",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P17",
                       "title": "P17",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P18",
                       "title": "P18",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P19",
                       "title": "P19",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P20",
                       "title": "P20",
                       "type": "text"
                     },
                     {
-                      "width": "6%",
                       "noEdit": "true",
                       "source": "individualCount",
                       "title": "Summa P1-20",
                       "type": "number"
                     },
                     {
-                      "width": "6%",
                       "noEdit": "true",
                       "source": "pk",
                       "title": "PK",

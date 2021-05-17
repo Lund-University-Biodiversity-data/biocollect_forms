@@ -108,26 +108,44 @@
         },
         {
           "dataType": "number",
+          "decimalPlaces": 0,
           "name": "island",
-          "validate": "min[0]"
+          "validate": "required,min[0]",
+          "behaviour": [
+            {
+              "condition": "separateIslandWater == \"nej\"",
+              "type": "enable"
+            }
+          ]
         },
         {
           "dataType": "number",
+          "decimalPlaces": 0,
           "name": "water",
-          "validate": "min[0]"
+          "validate": "required,min[0]",
+          "behaviour": [
+            {
+              "condition": "separateIslandWater == \"nej\"",
+              "type": "enable"
+            }
+          ]
         },
         {
           "dataType": "number",
+          "decimalPlaces": 0,
           "name": "individualCount",
           "dwcAttribute": "individualCount",
-          "computed": {
-            "operation": "sum",
-            "dependents": [
-              "water",
-              "island"
-            ]
+          "defaultValue": {
+            "expression": "water+island",
+            "type": "computed"
           },
-          "validate": "required,min[0]"
+          "validate": "required,min[0]",
+          "behaviour": [
+            {
+              "condition": "separateIslandWater == \"ja\"",
+              "type": "enable"
+            }
+          ]
         }
       ],
       "dataType": "list",
@@ -155,11 +173,23 @@
     },
     {
       "dataType": "number",
-      "name": "ducklingCount"
+      "name": "ducklingCount",
+      "behaviour": [
+        {
+          "condition": "ducklingsCounted == \"ja\"",
+          "type": "visible"
+        }
+      ]
     },
     {
       "dataType": "number",
       "name": "ducklingSize",
+      "behaviour": [
+        {
+          "condition": "ducklingsCounted == \"ja\"",
+          "type": "visible"
+        }
+      ],
       "constraints": [
         1,
         2,
@@ -178,7 +208,14 @@
     },
     {
       "dataType": "text",
-      "name": "deviation"
+      "name": "deviation",
+      "validate": "required",
+      "behaviour": [
+        {
+          "condition": "statement == \"nej\"",
+          "type": "visible"
+        }
+      ]
     }
   ],
   "viewModel": [
@@ -366,7 +403,7 @@
               "type": "row",
               "items": [
                 {
-                  "preLabel": "Jag har i kolumnen \"Fåglar på öppet vatten\" lagt in summerade värden",
+                  "preLabel": "Jag har i kolumnen \"Total\" lagt in summerade värden",
                   "source": "separateIslandWater",
                   "type": "selectOne"
                 }
@@ -411,7 +448,7 @@
                 }
               ]
             },
-            { 
+            {
               "type": "row",
               "items":
               [
@@ -515,10 +552,7 @@
                   "validate": "required"
                 },
                 {
-                  "source": "Om nej, beskriv avvikelsen",
-                  "type": "literal"
-                },
-                {
+                  "preLabel": "Om nej, beskriv avvikelsen",
                   "source": "deviation",
                   "type": "textarea",
                   "rows": 5

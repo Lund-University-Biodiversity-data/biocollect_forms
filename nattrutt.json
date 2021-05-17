@@ -1320,124 +1320,104 @@
                 {
                   "columns": [
                     {
-                      "width": "5%",
                       "source": "TidP01",
                       "title": "P1",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP02",
                       "title": "P2",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP03",
                       "title": "P3",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP04",
                       "title": "P4",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP05",
                       "title": "P5",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP06",
                       "title": "P6",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP07",
                       "title": "P7",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP08",
                       "title": "P8",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP09",
                       "title": "P9",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP10",
                       "title": "P10",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP11",
                       "title": "P11",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP12",
                       "title": "P12",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP13",
                       "title": "P13",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP14",
                       "title": "P14",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP15",
                       "title": "P15",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP16",
                       "title": "P16",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP17",
                       "title": "P17",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP18",
                       "title": "P18",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP19",
                       "title": "P19",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "5%",
                       "source": "TidP20",
                       "title": "P20",
-                      "type": "number"
+                      "type": "text"
                     }
                   ],
                   "source": "timeOfObservation",
@@ -1468,127 +1448,106 @@
                       "type": "autocomplete"
                     },
                     {
-                      "width": "6%",
                       "source": "P01",
                       "title": "P1",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P02",
                       "title": "P2",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P03",
                       "title": "P3",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P04",
                       "title": "P4",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P05",
                       "title": "P5",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P06",
                       "title": "P6",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P07",
                       "title": "P7",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P08",
                       "title": "P8",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P09",
                       "title": "P9",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P10",
                       "title": "P10",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P11",
                       "title": "P11",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P12",
                       "title": "P12",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P13",
                       "title": "P13",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P14",
                       "title": "P14",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P15",
                       "title": "P15",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P16",
                       "title": "P16",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P17",
                       "title": "P17",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P18",
                       "title": "P18",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P19",
                       "title": "P19",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P20",
                       "title": "P20",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "noEdit": "true",
                       "source": "individualCount",
                       "title": "Total",
@@ -1597,7 +1556,7 @@
                   ],
                   "source": "observations",
                   "type": "table",
-                  "userAddedRows": "true",
+                  "userAddedRows": true,
                   "disableTableUpload": true
                 }
               ]
@@ -1623,127 +1582,106 @@
                       "type": "autocomplete"
                     },
                     {
-                      "width": "6%",
                       "source": "P01",
                       "title": "P1",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P02",
                       "title": "P2",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P03",
                       "title": "P3",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P04",
                       "title": "P4",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P05",
                       "title": "P5",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P06",
                       "title": "P6",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P07",
                       "title": "P7",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P08",
                       "title": "P8",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P09",
                       "title": "P9",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P10",
                       "title": "P10",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P11",
                       "title": "P11",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P12",
                       "title": "P12",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P13",
                       "title": "P13",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P14",
                       "title": "P14",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P15",
                       "title": "P15",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P16",
                       "title": "P16",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P17",
                       "title": "P17",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P18",
                       "title": "P18",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P19",
                       "title": "P19",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P20",
                       "title": "P20",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "noEdit": "true",
                       "source": "individualCount",
                       "title": "Total",
@@ -1788,131 +1726,110 @@
                       "type": "autocomplete"
                     },
                     {
-                      "width": "6%",
                       "source": "P01",
                       "title": "P1",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P02",
                       "title": "P2",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P03",
                       "title": "P3",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P04",
                       "title": "P4",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P05",
                       "title": "P5",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P06",
                       "title": "P6",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P07",
                       "title": "P7",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P08",
                       "title": "P8",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P09",
                       "title": "P9",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P10",
                       "title": "P10",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P11",
                       "title": "P11",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P12",
                       "title": "P12",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P13",
                       "title": "P13",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P14",
                       "title": "P14",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P15",
                       "title": "P15",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P16",
                       "title": "P16",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P17",
                       "title": "P17",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P18",
                       "title": "P18",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P19",
                       "title": "P19",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P20",
                       "title": "P20",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "noEdit": "true",
                       "source": "individualCount",
                       "title": "Total",
-                      "type": "number"
+                      "type": "text"
                     }
                   ],
                   "source": "mammalObservations",
@@ -1943,121 +1860,101 @@
                       "type": "autocomplete"
                     },
                     {
-                      "width": "6%",
                       "source": "P01",
                       "title": "P1",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P02",
                       "title": "P2",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P03",
                       "title": "P3",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P04",
                       "title": "P4",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P05",
                       "title": "P5",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P06",
                       "title": "P6",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P07",
                       "title": "P7",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P08",
                       "title": "P8",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P09",
                       "title": "P9",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P10",
                       "title": "P10",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P11",
                       "title": "P11",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P12",
                       "title": "P12",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P13",
                       "title": "P13",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P14",
                       "title": "P14",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P15",
                       "title": "P15",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P16",
                       "title": "P16",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P17",
                       "title": "P17",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P18",
                       "title": "P18",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "source": "P19",
                       "title": "P19",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
-                      "width": "6%",
                       "noEdit": "true",
                       "source": "individualCount",
                       "title": "Total",
@@ -2102,127 +1999,106 @@
                       "type": "autocomplete"
                     },
                     {
-                      "width": "6%",
                       "source": "P01",
                       "title": "P1",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P02",
                       "title": "P2",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P03",
                       "title": "P3",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P04",
                       "title": "P4",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P05",
                       "title": "P5",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P06",
                       "title": "P6",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P07",
                       "title": "P7",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P08",
                       "title": "P8",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P09",
                       "title": "P9",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P10",
                       "title": "P10",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P11",
                       "title": "P11",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P12",
                       "title": "P12",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P13",
                       "title": "P13",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P14",
                       "title": "P14",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P15",
                       "title": "P15",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P16",
                       "title": "P16",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P17",
                       "title": "P17",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P18",
                       "title": "P18",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P19",
                       "title": "P19",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "source": "P20",
                       "title": "P20",
                       "type": "selectOne"
                     },
                     {
-                      "width": "6%",
                       "noEdit": "true",
                       "source": "individualCount",
                       "title": "Total",

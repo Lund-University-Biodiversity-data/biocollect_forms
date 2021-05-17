@@ -422,127 +422,106 @@
                         "type": "autocomplete"
                       },
                       {
-                        "width": "6%",
                         "source": "P01",
                         "title": "P01",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P02",
                         "title": "P02",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P03",
                         "title": "P03",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P04",
                         "title": "P04",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P05",
                         "title": "P05",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P06",
                         "title": "P06",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P07",
                         "title": "P07",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P08",
                         "title": "P08",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P09",
                         "title": "P09",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P10",
                         "title": "P10",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P11",
                         "title": "P11",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P12",
                         "title": "P12",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P13",
                         "title": "P13",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P14",
                         "title": "P14",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P15",
                         "title": "P15",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P16",
                         "title": "P16",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P17",
                         "title": "P17",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P18",
                         "title": "P18",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P19",
                         "title": "P19",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "source": "P20",
                         "title": "P20",
-                        "type": "number"
+                        "type": "text"
                       },
                       {
-                        "width": "6%",
                         "noEdit": "true",
                         "source": "individualCount",
                         "title": "Total",
