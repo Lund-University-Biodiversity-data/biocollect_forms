@@ -987,6 +987,193 @@
       ],
       "dataType": "list",
       "name": "amphibianObservations"
+    },
+    {
+      "allowRowDelete": false,
+      "columns": [
+        {
+          "dataType": "number",
+          "name": "P01",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P02",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P03",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P04",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P05",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P06",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P07",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P08",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P09",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P10",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P11",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P12",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P13",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P14",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P15",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P16",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P17",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P18",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P19",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P20",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        }
+      ],
+      "dataType": "list",
+      "name": "disturbances"
     }
   ],
   "viewModel": [
@@ -2117,6 +2304,128 @@
                   "source": "amphibianObservations",
                   "type": "table",
                   "userAddedRows": true,
+                  "disableTableUpload": true
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "source": "<h4>Störningar</h4>",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "columns": [
+                    {
+                      "source": "P01",
+                      "title": "P1",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P02",
+                      "title": "P2",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P03",
+                      "title": "P3",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P04",
+                      "title": "P4",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P05",
+                      "title": "P5",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P06",
+                      "title": "P6",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P07",
+                      "title": "P7",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P08",
+                      "title": "P8",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P09",
+                      "title": "P9",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P10",
+                      "title": "P10",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P11",
+                      "title": "P11",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P12",
+                      "title": "P12",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P13",
+                      "title": "P13",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P14",
+                      "title": "P14",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P15",
+                      "title": "P15",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P16",
+                      "title": "P16",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P17",
+                      "title": "P17",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P18",
+                      "title": "P18",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P19",
+                      "title": "P19",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P20",
+                      "title": "P20",
+                      "type": "selectOne"
+                    }
+                  ],
+                  "source": "disturbances",
+                  "type": "table",
+                  "userAddedRows": false,
                   "disableTableUpload": true
                 }
               ]
