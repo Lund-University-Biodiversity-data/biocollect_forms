@@ -126,8 +126,7 @@
         {
           "dataType": "species",
           "name": "species",
-          "dwcAttribute": "scientificName",
-          "description": "The name of the species observed"
+          "dwcAttribute": "scientificName"
         },
         {
           "dataType": "number",
