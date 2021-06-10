@@ -356,6 +356,27 @@
         "name": "observations"
       },
       {
+        "dataType":"number",
+        "name":"totalLineCount",
+        "computed":{
+            "expression":"sum(observations, \"lineCount\")"
+        }
+      },
+      {
+        "dataType":"number",
+        "name":"totalPointCount",
+        "computed":{
+            "expression":"sum(observations, \"pointCount\")"
+        }
+      },
+      {
+        "dataType":"number",
+        "name":"totalSpeciesCount",
+        "computed":{
+            "expression":"count(observations, \"species\")"
+        }
+      },
+      {
         "allowRowDelete": "true",
         "columns": [
           {
@@ -481,6 +502,27 @@
         ],
         "dataType": "list",
         "name": "mammalObservations"
+      },
+      {
+        "dataType":"number",
+        "name":"totalLineCountMammals",
+        "computed":{
+            "expression":"sum(mammalObservations, \"lineCount\")"
+        }
+      },
+      {
+        "dataType":"number",
+        "name":"totalPointCountMammals",
+        "computed":{
+            "expression":"sum(mammalObservations, \"pointCount\")"
+        }
+      },
+      {
+        "dataType":"number",
+        "name":"totalMammalSpeciesCount",
+        "computed":{
+            "expression":"count(mammalObservations, \"speciesMammals\")"
+        }
       }
     ],
     "viewModel": [
@@ -488,7 +530,7 @@
         "type": "row",
         "items": [
           {
-            "source": "<h1>STANDARDRUTTERNA</h1>Resultatprotokoll från kombinerad punkt- och linjetaxering",
+            "source": "<h1>STANDARDRUTTERNA</h1>",
             "type": "literal"
           }
         ]
@@ -973,6 +1015,26 @@
                 "type": "row",
                 "items": [
                   {
+                    "source": "totalPointCount",
+                    "preLabel": "Totala individer (punkter)",
+                    "type": "number"
+                  },
+                  {
+                    "source": "totalLineCount",
+                    "preLabel": "Totala individer (linjer)",
+                    "type": "number"
+                  },
+                  {
+                    "source": "totalSpeciesCount",
+                    "preLabel": "Totala arter",
+                    "type": "number"
+                  }
+                ]
+              },
+              {
+                "type": "row",
+                "items": [
+                  {
                     "source": "<h3>Däggdjur (antal)</h3>",
                     "type": "literal"
                   }
@@ -1086,6 +1148,26 @@
                     "type": "table",
                     "userAddedRows": true,
                     "disableTableUpload": true
+                  },
+                  {
+                    "type": "row",
+                    "items": [
+                      {
+                        "source": "totalPointCountMammals",
+                        "preLabel": "Totala individer (punkter)",
+                        "type": "number"
+                      },
+                      {
+                        "source": "totalLineCountMammals",
+                        "preLabel": "Totala individer (linjer)",
+                        "type": "number"
+                      },
+                      {
+                        "source": "totalMammalSpeciesCount",
+                        "preLabel": "Totala arter",
+                        "type": "number"
+                      }
+                    ]
                   }
                 ]
               }
