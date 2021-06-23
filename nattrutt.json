@@ -265,8 +265,7 @@
         {
           "dataType": "species",
           "name": "species",
-          "dwcAttribute": "scientificName",
-          "validate": "required"
+          "dwcAttribute": "scientificName"
         },
         {
           "dataType": "number",
@@ -376,8 +375,7 @@
             ]
           },
           "name": "individualCount",
-          "dwcAttribute": "individualCount",
-          "validate": "required,min[0]"
+          "dwcAttribute": "individualCount"
         }
       ],
       "dataType": "list",
@@ -2168,7 +2166,7 @@
               "type": "row",
               "items": [
                 {
-                  "source": "<h4>Groddjur (antal)</h4>",
+                  "source": "<h4>Groddjur (närvaro, inga antal)</h4>",
                   "type": "literal"
                 }
               ]
