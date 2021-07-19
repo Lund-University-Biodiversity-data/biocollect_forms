@@ -152,6 +152,20 @@
       "name": "observations"
     },
     {
+      "dataType": "number",
+      "name": "totalCount",
+      "computed": {
+        "expression": "sum(observations, \"individualCount\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpeciesCount",
+      "computed": {
+        "expression": "count(observations, \"species\")"
+      }
+    },
+    {
       "dataType": "stringList",
       "name": "mammalObservations",
       "constraints": [
@@ -422,13 +436,11 @@
                       "validate": "required"
                     },
                     {
-                      "width": "15%",
                       "source": "island",
                       "title": "Fåglar på ö",
                       "type": "number"
                     },
                     {
-                      "width": "15%",
                       "source": "water",
                       "title": "Fåglar på öppet vatten",
                       "type": "number"
@@ -450,8 +462,22 @@
             },
             {
               "type": "row",
-              "items":
-              [
+              "items": [
+                {
+                  "source": "totalCount",
+                  "preLabel": "Summa av individer (total)",
+                  "type": "number"
+                },
+                {
+                  "source": "totalSpeciesCount",
+                  "preLabel": "Totala arter",
+                  "type": "number"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
                 {
                   "type": "col",
                   "items": [
@@ -505,15 +531,9 @@
                       "type": "row",
                       "items": [
                         {
-                        "type": "literal",
-                        "boxed": "true",
-                        "source": "Ejderungar räknas endast i de län där de regionalt ansvariga (oftast länsstyrelsen) meddelat att så ska göras.<br>
-                          Antal = antal inräknade ungar<br>
-                          Storlek = den vanligaste storleksklassen i en ruta enligt följande:
-                          <li>1 < 25% av den vuxnas storlek</li>
-                          <li>2 25-50 % av den vuxnas storlek</li>
-                          <li>3 50-75 % av den vuxnas storlek</li>
-                          <li>4 >75 % av den vuxnas storlek</li>"
+                          "type": "literal",
+                          "boxed": "true",
+                          "source": "Ejderungar räknas endast i de län där de regionalt ansvariga (oftast länsstyrelsen) meddelat att så ska göras.<br>\n                          Antal = antal inräknade ungar<br>\n                          Storlek = den vanligaste storleksklassen i en ruta enligt följande:\n                          <li>1 < 25% av den vuxnas storlek</li>\n                          <li>2 25-50 % av den vuxnas storlek</li>\n                          <li>3 50-75 % av den vuxnas storlek</li>\n                          <li>4 >75 % av den vuxnas storlek</li>"
                         }
                       ]
                     }
