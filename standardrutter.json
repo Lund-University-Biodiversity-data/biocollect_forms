@@ -1067,27 +1067,27 @@
                     {
                       "source": "P01",
                       "title": "P1",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "source": "P02",
                       "title": "P2",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "source": "P03",
                       "title": "P3",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "source": "P04",
                       "title": "P4",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "source": "P05",
                       "title": "P5",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "source": "P06",
