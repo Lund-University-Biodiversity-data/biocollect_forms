@@ -241,6 +241,10 @@
           "validate": "required"
         },
         {
+          "dataType": "text",
+          "name": "swedishRank"
+        },
+        {
           "dataType": "number",
           "name": "P01",
           "validate": "min[0]"
@@ -1062,7 +1066,14 @@
                     {
                       "title": "Art (kod)",
                       "source": "species",
+                      "width": "20%",
                       "type": "autocomplete"
+                    },
+                    {
+                      "source": "swedishRank",
+                      "title": "Rank",
+                      "type": "text",
+                      "readonly": "true"
                     },
                     {
                       "source": "P01",
