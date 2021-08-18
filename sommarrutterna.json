@@ -106,6 +106,10 @@
             "dwcAttribute": "scientificName"
           },
           {
+            "dataType": "text",
+            "name": "swedishRank"
+          },
+          {
             "dataType": "number",
             "name": "P01"
           },
@@ -419,6 +423,12 @@
                         "width": "20%",
                         "source": "species",
                         "type": "autocomplete"
+                      },
+                      {
+                        "source": "swedishRank",
+                        "title": "Rank",
+                        "type": "text",
+                        "readonly": "true"
                       },
                       {
                         "source": "P01",
