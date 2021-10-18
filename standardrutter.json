@@ -664,6 +664,7 @@
     {
       "dataType": "number",
       "name": "totalLineCountMammals",
+      "decimalPlaces": 0,
       "computed": {
         "expression": "sum(mammalObservations, \"lineCount\")"
       }
@@ -671,6 +672,7 @@
     {
       "dataType": "number",
       "name": "totalPointCountMammals",
+      "decimalPlaces": 0,
       "computed": {
         "expression": "sum(mammalObservations, \"pointCount\")"
       }
@@ -678,6 +680,7 @@
     {
       "dataType": "number",
       "name": "totalMammalSpeciesCount",
+      "decimalPlaces": 0,
       "computed": {
         "expression": "count(mammalObservations, \"speciesMammals\")"
       }
