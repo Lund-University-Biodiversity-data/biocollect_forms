@@ -2333,102 +2333,122 @@
                     {
                       "source": "P01",
                       "title": "P1",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P02",
                       "title": "P2",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P03",
                       "title": "P3",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P04",
                       "title": "P4",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P05",
                       "title": "P5",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P06",
                       "title": "P6",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P07",
                       "title": "P7",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P08",
                       "title": "P8",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P09",
                       "title": "P9",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P10",
                       "title": "P10",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P11",
                       "title": "P11",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P12",
                       "title": "P12",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P13",
                       "title": "P13",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P14",
                       "title": "P14",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P15",
                       "title": "P15",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P16",
                       "title": "P16",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P17",
                       "title": "P17",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P18",
                       "title": "P18",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P19",
                       "title": "P19",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     },
                     {
                       "source": "P20",
                       "title": "P20",
-                      "type": "selectOne"
+                      "type": "selectOne",
+                      "width": "5%"
                     }
                   ],
                   "source": "disturbances",
