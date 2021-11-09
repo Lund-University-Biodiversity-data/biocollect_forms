@@ -59,18 +59,24 @@
     {
       "dataType": "number",
       "name": "transport",
-      "description":  "1 = till fots eller på skidor, 2= cykel eller moped, 3 = bil eller MC, 4 = annat",
+      "description": "1 = till fots eller på skidor, 2= cykel eller moped, 3 = bil eller MC, 4 = annat",
       "constraints": [
-        1, 2, 3, 4
+        1,
+        2,
+        3,
+        4
       ],
       "validate": "required"
     },
     {
       "dataType": "number",
       "name": "snow",
-      "description":"1 = barmark, 2 = snötäckt mark, 3 = mycket tunt snötäcke eller fläckvis snötäcke",
+      "description": "1 = barmark, 2 = snötäckt mark, 3 = mycket tunt snötäcke eller fläckvis snötäcke",
       "constraints": [
-        1, 2, 3],
+        1,
+        2,
+        3
+      ],
       "validate": "required"
     },
     {
@@ -245,7 +251,32 @@
         },
         {
           "dataType": "number",
-          "name": "pk"
+          "name": "pk",
+          "computed": {
+            "operation": "countInRow",
+            "dependents": [
+              "P01",
+              "P02",
+              "P03",
+              "P04",
+              "P05",
+              "P06",
+              "P07",
+              "P08",
+              "P09",
+              "P10",
+              "P11",
+              "P12",
+              "P13",
+              "P14",
+              "P15",
+              "P16",
+              "P17",
+              "P18",
+              "P19",
+              "P20"
+            ]
+          }
         }
       ],
       "dataType": "list",
