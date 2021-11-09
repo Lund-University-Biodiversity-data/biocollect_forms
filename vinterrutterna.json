@@ -253,7 +253,7 @@
           "dataType": "number",
           "name": "pk",
           "computed": {
-            "operation": "countInRow",
+            "operation": "countNonZeroValuesInRow",
             "dependents": [
               "P01",
               "P02",

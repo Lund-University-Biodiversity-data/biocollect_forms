@@ -223,7 +223,7 @@
           {
             "dataType": "number",
             "computed": {
-              "operation": "countInRow",
+              "operation": "countNonZeroValuesInRow",
               "dependents": [
                 "P01",
                 "P02",
