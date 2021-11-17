@@ -254,171 +254,164 @@
         "name": "observations"
       },
       {
-        "allowRowDelete": false,
-        "columns": [
-          {
-            "dataType": "number",
-            "name": "totalP01",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P01\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP02",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P02\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP03",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P03\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP04",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P04\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP05",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P05\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP06",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P06\")"
-            }
-          },
-          {
-            "dataType": "numberL05",
-            "name": "totalP07",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P07\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP08",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P08\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP09",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P09\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP10",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P10\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP11",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P11\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP12",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P12\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP13",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P13\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP14",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P14\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP15",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P15\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP16",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P16\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP17",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P17\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP18",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P18\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP19",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P19\")"
-            }
-          },
-          {
-            "dataType": "number",
-            "name": "totalP20",
-            "decimalPlaces": 0,
-            "computed": {
-              "expression": "sum(observations, \"P20\")"
-            }
-          }
-        ],
-        "dataType": "list",
-        "name": "totalForColumns"
+        "dataType": "number",
+        "name": "totalP01",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P01\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP02",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P02\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP03",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P03\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP04",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P04\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP05",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P05\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP06",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P06\")"
+        }
+      },
+      {
+        "dataType": "numberL05",
+        "name": "totalP07",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P07\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP08",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P08\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP09",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P09\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP10",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P10\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP11",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P11\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP12",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P12\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP13",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P13\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP14",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P14\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP15",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P15\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP16",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P16\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP17",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P17\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP18",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P18\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP19",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P19\")"
+        }
+      },
+      {
+        "dataType": "number",
+        "name": "totalP20",
+        "decimalPlaces": 0,
+        "computed": {
+          "expression": "sum(observations, \"P20\")"
+        }
       },
       {
         "dataType": "number",
@@ -758,7 +751,148 @@
                     "source": "observations",
                     "type": "table",
                     "userAddedRows": true,
-                    "disableTableUpload": true
+                    "disableTableUpload": true,
+                    "footer": {
+                      "rows": [
+                        {
+                          "columns": [
+                            {
+                              "noEdit": "true",
+                              "width": "20%",
+                              "source": "labelTotalIndividuals"
+                            },
+                            {
+                              "noEdit": "true"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP01",
+                              "title": "P1",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP02",
+                              "title": "P2",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP03",
+                              "title": "P3",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP04",
+                              "title": "P4",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP05",
+                              "title": "P5",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP06",
+                              "title": "P6",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP07",
+                              "title": "P7",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP08",
+                              "title": "P8",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP09",
+                              "title": "P09",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP10",
+                              "title": "P10",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP11",
+                              "title": "P11",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP12",
+                              "title": "P12",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP13",
+                              "title": "P13",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP14",
+                              "title": "P14",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP15",
+                              "title": "P15",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP16",
+                              "title": "P16",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP17",
+                              "title": "P17",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP18",
+                              "title": "P18",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP19",
+                              "title": "P19",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalP20",
+                              "title": "P20",
+                              "type": "number"
+                            },
+                            {
+                              "noEdit": "true",
+                              "source": "totalPointCount",
+                              "type": "number"
+                            }
+                          ]
+                        }
+                      ]
+                    }
                   }
                 ]
               }
@@ -771,16 +905,15 @@
         "type": "row",
         "items": [
           {
-            "source": "<h3>Total antal</h3>",
-            "type": "literal"
-          }
-        ]
-      },
-      {
-        "type": "row",
-        "items": [
-          {
             "columns": [
+              {
+                "noEdit": "true",
+                "width": "20%",
+                "source": "Antal per punkt"
+              },
+              {
+                "noEdit": "true"
+              },
               {
                 "noEdit": "true",
                 "source": "totalP01",
@@ -912,11 +1045,6 @@
       {
         "type": "row",
         "items": [
-          {
-            "source": "totalPointCount",
-            "preLabel": "Totala individer (punkter)",
-            "type": "number"
-          },
           {
             "source": "totalSpeciesCount",
             "preLabel": "Totala arter",
