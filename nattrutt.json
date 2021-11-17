@@ -554,11 +554,6 @@
       "allowRowDelete": false,
       "columns": [
         {
-          "dataType": "text",
-          "name": "labelTotalSpecies",
-          "defaultValue": "Antal arter per punkt"
-        },
-        {
           "dataType": "number",
           "name": "totalP01",
           "decimalPlaces": 0,
