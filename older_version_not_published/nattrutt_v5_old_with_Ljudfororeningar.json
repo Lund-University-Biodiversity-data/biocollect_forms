@@ -1,0 +1,5222 @@
+{
+  "modelName": "Nattrutt",
+  "record": true,
+  "title": "Nattrutt",
+  "dataModel": [
+    {
+      "dataType": "number",
+      "name": "period",
+      "description": "1 = mars, 2 = april, 3 = juni",
+      "constraints": [
+        1,
+        2,
+        3
+      ],
+      "validate": "required"
+    },
+    {
+      "dataType": "text",
+      "name": "recordedBy",
+      "dwcAttribute": "recordedBy",
+      "validate": "required"
+    },
+    {
+      "allowRowDelete": "true",
+      "columns": [
+        {
+          "dataType": "text",
+          "name": "helper"
+        }
+      ],
+      "dataType": "list",
+      "name": "helpers"
+    },
+    {
+      "defaultValue": "${now}",
+      "dataType": "date",
+      "name": "surveyDate",
+      "dwcAttribute": "eventDate",
+      "validate": "required"
+    },
+    {
+      "dataType": "time",
+      "name": "surveyStartTime",
+      "dwcAttribute": "eventTime",
+      "validate": "required"
+    },
+    {
+      "dataType": "time",
+      "name": "surveyStartTime",
+      "dwcAttribute": "eventTime",
+      "validate": "required"
+    },
+    {
+      "dataType": "time",
+      "name": "surveyFinishTime",
+      "validate": "required"
+    },
+    {
+      "dataType": "number",
+      "description": "I åttondelar, 0 = inga moln, helt klart, 8 = helt mulet",
+      "name": "cloudsStart",
+      "constraints": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "validate": "required"
+    },
+    {
+      "dataType": "number",
+      "description": "0 = ingen, 1 = regn, 2 = snöfall",
+      "name": "precipitationStart",
+      "constraints": [
+        0,
+        1,
+        2
+      ],
+      "validate": "required"
+    },
+    {
+      "dataType": "number",
+      "name": "temperatureStart",
+      "validate": "required,min[-20],max[35]"
+    },
+    {
+      "dataType": "number",
+      "name": "windStart",
+      "validate": "required,min[0]"
+    },
+    {
+      "dataType": "number",
+      "description": "I åttondelar, 0 = inga moln, helt klart, 8 = helt mulet",
+      "name": "cloudsEnd",
+      "constraints": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "validate": "required"
+    },
+    {
+      "dataType": "number",
+      "description": "0 = ingen, 1 = regn, 2 = snöfall",
+      "name": "precipitationEnd",
+      "constraints": [
+        0,
+        1,
+        2
+      ],
+      "validate": "required"
+    },
+    {
+      "dataType": "number",
+      "name": "temperatureEnd",
+      "validate": "required,min[-20],max[35]"
+    },
+    {
+      "dataType": "number",
+      "name": "windEnd",
+      "validate": "required,min[0]"
+    },
+    {
+      "dataType": "text",
+      "name": "eventRemarks",
+      "dwcAttribute": "eventRemarks"
+    },
+    {
+      "dataType": "text",
+      "name": "comments",
+      "dwcAttribute": "notes"
+    },
+    {
+      "defaultAccuracy": 50,
+      "hideMyLocation": false,
+      "columns": [
+        {
+          "dwcAttribute": "verbatimLatitude",
+          "source": "locationLatitude"
+        },
+        {
+          "dwcAttribute": "verbatimLongitude",
+          "source": "locationLongitude"
+        },
+        {
+          "source": "Locality"
+        },
+        {
+          "source": "Accuracy"
+        },
+        {
+          "source": "Notes"
+        },
+        {
+          "source": "Source"
+        }
+      ],
+      "dataType": "geoMap",
+      "name": "location",
+      "hideSiteSelection": false,
+      "zoomToProjectArea": true,
+      "validate": "required"
+    },
+    {
+      "allowRowDelete": "true",
+      "columns": [
+        {
+          "dataType": "number",
+          "name": "TidP01",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP02",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP03",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP04",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP05",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP06",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP07",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP08",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP09",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP10",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP11",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP12",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP13",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP14",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP15",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP16",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP17",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP18",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP19",
+          "validate": "custom[integer],min[0],max[2359]"
+        },
+        {
+          "dataType": "number",
+          "name": "TidP20",
+          "validate": "custom[integer],min[0],max[2359]"
+        }
+      ],
+      "dataType": "list",
+      "name": "timeOfObservation"
+    },
+    {
+      "allowRowDelete": "true",
+      "columns": [
+        {
+          "dataType": "species",
+          "name": "species",
+          "dwcAttribute": "scientificName"
+        },
+        {
+          "dataType": "text",
+          "name": "swedishRank"
+        },
+        {
+          "dataType": "number",
+          "name": "P01"
+        },
+        {
+          "dataType": "number",
+          "name": "P02"
+        },
+        {
+          "dataType": "number",
+          "name": "P03"
+        },
+        {
+          "dataType": "number",
+          "name": "P04"
+        },
+        {
+          "dataType": "number",
+          "name": "P05"
+        },
+        {
+          "dataType": "number",
+          "name": "P06"
+        },
+        {
+          "dataType": "number",
+          "name": "P07"
+        },
+        {
+          "dataType": "number",
+          "name": "P08"
+        },
+        {
+          "dataType": "number",
+          "name": "P09"
+        },
+        {
+          "dataType": "number",
+          "name": "P10"
+        },
+        {
+          "dataType": "number",
+          "name": "P11"
+        },
+        {
+          "dataType": "number",
+          "name": "P12"
+        },
+        {
+          "dataType": "number",
+          "name": "P13"
+        },
+        {
+          "dataType": "number",
+          "name": "P14"
+        },
+        {
+          "dataType": "number",
+          "name": "P15"
+        },
+        {
+          "dataType": "number",
+          "name": "P16"
+        },
+        {
+          "dataType": "number",
+          "name": "P17"
+        },
+        {
+          "dataType": "number",
+          "name": "P18"
+        },
+        {
+          "dataType": "number",
+          "name": "P19"
+        },
+        {
+          "dataType": "number",
+          "name": "P20"
+        },
+        {
+          "dataType": "number",
+          "computed": {
+            "operation": "sum",
+            "dependents": [
+              "P01",
+              "P02",
+              "P03",
+              "P04",
+              "P05",
+              "P06",
+              "P07",
+              "P08",
+              "P09",
+              "P10",
+              "P11",
+              "P12",
+              "P13",
+              "P14",
+              "P15",
+              "P16",
+              "P17",
+              "P18",
+              "P19",
+              "P20"
+            ]
+          },
+          "name": "individualCount",
+          "dwcAttribute": "individualCount"
+        }
+      ],
+      "dataType": "list",
+      "name": "observations"
+    },
+    {
+      "dataType": "text",
+      "name": "labelTotalIndividuals",
+      "defaultValue": "Antal per punkt"
+    },
+    {
+      "dataType": "number",
+      "name": "totalP01",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P01\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP02",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P02\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP03",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P03\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP04",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P04\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP05",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P05\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP06",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P06\")"
+      }
+    },
+    {
+      "dataType": "numberL05",
+      "name": "totalP07",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P07\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP08",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P08\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP09",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P09\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP10",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P10\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP11",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P11\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP12",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P12\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP13",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P13\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP14",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P14\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP15",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P15\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP16",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P16\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP17",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P17\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP18",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P18\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP19",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P19\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP20",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"P20\")"
+      }
+    },
+    {
+      "allowRowDelete": false,
+      "columns": [
+        {
+          "dataType": "number",
+          "name": "totalP01",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P01\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP02",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P02\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP03",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P03\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP04",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P04\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP05",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P05\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP06",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P06\")"
+          }
+        },
+        {
+          "dataType": "numberL05",
+          "name": "totalP07",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P07\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP08",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P08\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP09",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P09\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP10",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P10\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP11",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P11\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP12",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P12\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP13",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P13\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP14",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P14\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP15",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P15\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP16",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P16\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP17",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P17\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP18",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P18\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP19",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P19\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP20",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(observations, \"P20\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalSpeciesCount",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "count(observations, \"species\")"
+          }
+        }
+      ],
+      "dataType": "list",
+      "name": "totalSpeciesInColumn"
+    },
+    {
+      "dataType": "number",
+      "name": "totalPointCount",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(observations, \"individualCount\")"
+      }
+    },
+    {
+      "allowRowDelete": "true",
+      "columns": [
+        {
+          "dataType": "species",
+          "name": "speciesYoungOwl",
+          "dwcAttribute": "scientificName"
+        },
+        {
+          "dataType": "number",
+          "name": "P01"
+        },
+        {
+          "dataType": "number",
+          "name": "P02"
+        },
+        {
+          "dataType": "number",
+          "name": "P03"
+        },
+        {
+          "dataType": "number",
+          "name": "P04"
+        },
+        {
+          "dataType": "number",
+          "name": "P05"
+        },
+        {
+          "dataType": "number",
+          "name": "P06"
+        },
+        {
+          "dataType": "number",
+          "name": "P07"
+        },
+        {
+          "dataType": "number",
+          "name": "P08"
+        },
+        {
+          "dataType": "number",
+          "name": "P09"
+        },
+        {
+          "dataType": "number",
+          "name": "P10"
+        },
+        {
+          "dataType": "number",
+          "name": "P11"
+        },
+        {
+          "dataType": "number",
+          "name": "P12"
+        },
+        {
+          "dataType": "number",
+          "name": "P13"
+        },
+        {
+          "dataType": "number",
+          "name": "P14"
+        },
+        {
+          "dataType": "number",
+          "name": "P15"
+        },
+        {
+          "dataType": "number",
+          "name": "P16"
+        },
+        {
+          "dataType": "number",
+          "name": "P17"
+        },
+        {
+          "dataType": "number",
+          "name": "P18"
+        },
+        {
+          "dataType": "number",
+          "name": "P19"
+        },
+        {
+          "dataType": "number",
+          "name": "P20"
+        },
+        {
+          "dataType": "number",
+          "computed": {
+            "operation": "sum",
+            "dependents": [
+              "P01",
+              "P02",
+              "P03",
+              "P04",
+              "P05",
+              "P06",
+              "P07",
+              "P08",
+              "P09",
+              "P10",
+              "P11",
+              "P12",
+              "P13",
+              "P14",
+              "P15",
+              "P16",
+              "P17",
+              "P18",
+              "P19",
+              "P20"
+            ]
+          },
+          "name": "individualCount",
+          "dwcAttribute": "individualCount",
+          "validate": "required,min[0]"
+        }
+      ],
+      "dataType": "list",
+      "name": "youngOwlObservations"
+    },
+    {
+      "dataType": "number",
+      "name": "totalPointCountYOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"individualCount\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP01YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P01\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP02YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P02\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP03YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P03\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP04YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P04\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP05YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P05\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP06YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P06\")"
+      }
+    },
+    {
+      "dataType": "numberL05",
+      "name": "totalP07YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P07\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP08YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P08\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP09YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P09\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP10YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P10\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP11YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P11\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP12YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P12\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP13YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P13\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP14YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P14\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP15YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P15\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP16YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P16\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP17YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P17\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP18YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P18\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP19YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P19\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP20YOwl",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(youngOwlObservations, \"P20\")"
+      }
+    },
+    {
+      "allowRowDelete": false,
+      "columns": [
+        {
+          "dataType": "number",
+          "name": "totalP01",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P01\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP02",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P02\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP03",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P03\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP04",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P04\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP05",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P05\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP06",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P06\")"
+          }
+        },
+        {
+          "dataType": "numberL05",
+          "name": "totalP07",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P07\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP08",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P08\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP09",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P09\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP10",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P10\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP11",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P11\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP12",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P12\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP13",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P13\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP14",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P14\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP15",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P15\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP16",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P16\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP17",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P17\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP18",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P18\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP19",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P19\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP20",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(youngOwlObservations, \"P20\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalSpeciesCount",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "count(youngOwlObservations, \"species\")"
+          }
+        }
+      ],
+      "dataType": "list",
+      "name": "totalYOwlSpeciesInColumn"
+    },
+    {
+      "dataType": "text",
+      "name": "mammalsCounted",
+      "constraints": [
+        "ja",
+        "nej"
+      ],
+      "validate": "required"
+    },
+    {
+      "allowRowDelete": "true",
+      "columns": [
+        {
+          "dataType": "species",
+          "name": "speciesMammals",
+          "dwcAttribute": "scientificName"
+        },
+        {
+          "dataType": "number",
+          "name": "P01"
+        },
+        {
+          "dataType": "number",
+          "name": "P02"
+        },
+        {
+          "dataType": "number",
+          "name": "P03"
+        },
+        {
+          "dataType": "number",
+          "name": "P04"
+        },
+        {
+          "dataType": "number",
+          "name": "P05"
+        },
+        {
+          "dataType": "number",
+          "name": "P06"
+        },
+        {
+          "dataType": "number",
+          "name": "P07"
+        },
+        {
+          "dataType": "number",
+          "name": "P08"
+        },
+        {
+          "dataType": "number",
+          "name": "P09"
+        },
+        {
+          "dataType": "number",
+          "name": "P10"
+        },
+        {
+          "dataType": "number",
+          "name": "P11"
+        },
+        {
+          "dataType": "number",
+          "name": "P12"
+        },
+        {
+          "dataType": "number",
+          "name": "P13"
+        },
+        {
+          "dataType": "number",
+          "name": "P14"
+        },
+        {
+          "dataType": "number",
+          "name": "P15"
+        },
+        {
+          "dataType": "number",
+          "name": "P16"
+        },
+        {
+          "dataType": "number",
+          "name": "P17"
+        },
+        {
+          "dataType": "number",
+          "name": "P18"
+        },
+        {
+          "dataType": "number",
+          "name": "P19"
+        },
+        {
+          "dataType": "number",
+          "name": "P20"
+        },
+        {
+          "dataType": "number",
+          "computed": {
+            "operation": "sum",
+            "dependents": [
+              "P01",
+              "P02",
+              "P03",
+              "P04",
+              "P05",
+              "P06",
+              "P07",
+              "P08",
+              "P09",
+              "P10",
+              "P11",
+              "P12",
+              "P13",
+              "P14",
+              "P15",
+              "P16",
+              "P17",
+              "P18",
+              "P19",
+              "P20"
+            ]
+          },
+          "name": "individualCount",
+          "dwcAttribute": "individualCount",
+          "validate": "required,min[0]"
+        }
+      ],
+      "dataType": "list",
+      "name": "mammalObservations"
+    },
+    {
+      "dataType": "number",
+      "name": "totalPointCountMammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"individualCount\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP01Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P01\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP02Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P02\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP03Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P03\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP04Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P04\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP05Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P05\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP06Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P06\")"
+      }
+    },
+    {
+      "dataType": "numberL05",
+      "name": "totalP07Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P07\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP08Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P08\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP09Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P09\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP10Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P10\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP11Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P11\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP12Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P12\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP13Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P13\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP14Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P14\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP15Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P15\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP16Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P16\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP17Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P17\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP18Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P18\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP19Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P19\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP20Mammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservations, \"P20\")"
+      }
+    },
+    {
+      "allowRowDelete": false,
+      "columns": [
+        {
+          "dataType": "number",
+          "name": "totalP01",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P01\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP02",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P02\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP03",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P03\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP04",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P04\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP05",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P05\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP06",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P06\")"
+          }
+        },
+        {
+          "dataType": "numberL05",
+          "name": "totalP07",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P07\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP08",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P08\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP09",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P09\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP10",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P10\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP11",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P11\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP12",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P12\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP13",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P13\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP14",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P14\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP15",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P15\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP16",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P16\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP17",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P17\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP18",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P18\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP19",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P19\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP20",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservations, \"P20\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalSpeciesCountMammals",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "count(mammalObservations, \"species\")"
+          }
+        }
+      ],
+      "dataType": "list",
+      "name": "totalMammalSpeciesInColumn"
+    },
+    {
+      "allowRowDelete": "true",
+      "columns": [
+        {
+          "dataType": "species",
+          "name": "speciesMammalsOnRoad",
+          "dwcAttribute": "scientificName"
+        },
+        {
+          "dataType": "number",
+          "name": "P01"
+        },
+        {
+          "dataType": "number",
+          "name": "P02"
+        },
+        {
+          "dataType": "number",
+          "name": "P03"
+        },
+        {
+          "dataType": "number",
+          "name": "P04"
+        },
+        {
+          "dataType": "number",
+          "name": "P05"
+        },
+        {
+          "dataType": "number",
+          "name": "P06"
+        },
+        {
+          "dataType": "number",
+          "name": "P07"
+        },
+        {
+          "dataType": "number",
+          "name": "P08"
+        },
+        {
+          "dataType": "number",
+          "name": "P09"
+        },
+        {
+          "dataType": "number",
+          "name": "P10"
+        },
+        {
+          "dataType": "number",
+          "name": "P11"
+        },
+        {
+          "dataType": "number",
+          "name": "P12"
+        },
+        {
+          "dataType": "number",
+          "name": "P13"
+        },
+        {
+          "dataType": "number",
+          "name": "P14"
+        },
+        {
+          "dataType": "number",
+          "name": "P15"
+        },
+        {
+          "dataType": "number",
+          "name": "P16"
+        },
+        {
+          "dataType": "number",
+          "name": "P17"
+        },
+        {
+          "dataType": "number",
+          "name": "P18"
+        },
+        {
+          "dataType": "number",
+          "name": "P19"
+        },
+        {
+          "dataType": "number",
+          "computed": {
+            "operation": "sum",
+            "dependents": [
+              "P01",
+              "P02",
+              "P03",
+              "P04",
+              "P05",
+              "P06",
+              "P07",
+              "P08",
+              "P09",
+              "P10",
+              "P11",
+              "P12",
+              "P13",
+              "P14",
+              "P15",
+              "P16",
+              "P17",
+              "P18",
+              "P19"
+            ]
+          },
+          "name": "individualCount",
+          "dwcAttribute": "individualCount",
+          "validate": "required,min[0]"
+        }
+      ],
+      "dataType": "list",
+      "name": "mammalObservationsOnRoad"
+    },
+    {
+      "dataType": "number",
+      "name": "totalP01MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P01\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP02MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P02\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP03MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P03\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP04MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P04\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP05MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P05\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP06MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P06\")"
+      }
+    },
+    {
+      "dataType": "numberL05",
+      "name": "totalP07MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P07\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP08MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P08\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP09MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P09\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP10MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P10\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP11MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P11\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP12MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P12\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP13MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P13\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP14MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P14\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP15MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P15\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP16MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P16\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP17MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P17\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP18MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P18\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalP19MammalsRd",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"P19\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalRoadCountMammals",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "sum(mammalObservationsOnRoad, \"individualCount\")"
+      }
+    },
+    {
+      "allowRowDelete": false,
+      "columns": [
+        {
+          "dataType": "number",
+          "name": "totalP01",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P01\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP02",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P02\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP03",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P03\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP04",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P04\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP05",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P05\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP06",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P06\")"
+          }
+        },
+        {
+          "dataType": "numberL05",
+          "name": "totalP07",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P07\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP08",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P08\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP09",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P09\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP10",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P10\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP11",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P11\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP12",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P12\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP13",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P13\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP14",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P14\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP15",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P15\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP16",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P16\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP17",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P17\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP18",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P18\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP19",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P19\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalP20",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "countNonZeroValuesInColumn(mammalObservationsOnRoad, \"P20\")"
+          }
+        },
+        {
+          "dataType": "number",
+          "name": "totalSpeciesCountMammalsRd",
+          "decimalPlaces": 0,
+          "computed": {
+            "expression": "count(mammalObservationsOnRoad, \"species\")"
+          }
+        }
+      ],
+      "dataType": "list",
+      "name": "totalMammalRdSpeciesInColumn"
+    },
+    {
+      "dataType": "text",
+      "name": "amphibiansCounted",
+      "constraints": [
+        "ja",
+        "nej"
+      ],
+      "validate": "required"
+    },
+    {
+      "allowRowDelete": "true",
+      "columns": [
+        {
+          "dataType": "species",
+          "name": "speciesAmphibians",
+          "dwcAttribute": "scientificName"
+        },
+        {
+          "dataType": "number",
+          "name": "P01",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P02",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P03",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P04",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P05",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P06",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P07",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P08",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P09",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P10",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P11",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P12",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P13",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P14",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P15",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P16",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P17",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P18",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P19",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P20",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "computed": {
+            "operation": "sum",
+            "dependents": [
+              "P01",
+              "P02",
+              "P03",
+              "P04",
+              "P05",
+              "P06",
+              "P07",
+              "P08",
+              "P09",
+              "P10",
+              "P11",
+              "P12",
+              "P13",
+              "P14",
+              "P15",
+              "P16",
+              "P17",
+              "P18",
+              "P19",
+              "P20"
+            ]
+          },
+          "name": "individualCount",
+          "dwcAttribute": "individualCount",
+          "validate": "required,min[0]"
+        }
+      ],
+      "dataType": "list",
+      "name": "amphibianObservations"
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP01Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P01\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP02Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P02\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP03Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P03\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP04Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P04\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP05Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P05\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP06Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P06\")"
+      }
+    },
+    {
+      "dataType": "numberL05",
+      "name": "totalSpP07Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P07\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP08Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P08\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP09Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P09\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP10Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P10\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP11Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P11\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP12Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P12\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP13Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P13\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP14Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P14\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP15Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P15\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP16Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P16\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP17Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P17\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP18Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P18\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP19Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P19\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpP20Amphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"P20\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "totalSpeciesCountAmphibian",
+      "decimalPlaces": 0,
+      "computed": {
+        "expression": "countNonZeroValuesInColumn(amphibianObservations, \"individualCount\")"
+      }
+    },
+    {
+      "allowRowDelete": false,
+      "columns": [
+        {
+          "dataType": "number",
+          "name": "P01",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P02",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P03",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P04",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P05",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P06",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P07",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P08",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P09",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P10",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P11",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P12",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P13",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P14",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P15",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P16",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P17",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P18",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P19",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        },
+        {
+          "dataType": "number",
+          "name": "P20",
+          "defaultValue": 0,
+          "constraints": [
+            0,
+            1
+          ]
+        }
+      ],
+      "dataType": "list",
+      "name": "disturbances"
+    }
+  ],
+  "viewModel": [
+    {
+      "type": "row",
+      "items": [
+        {
+          "source": "<h1>Nattrutt</h1>",
+          "type": "literal"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "items": [
+        {
+          "type": "col",
+          "items": [
+            {
+              "boxed": true,
+              "title": "Inventerare och ruttbeskrivning",
+              "type": "section",
+              "items": [
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "preLabel": "Inventeringsperiod",
+                      "source": "period",
+                      "type": "selectOne"
+                    }
+                  ]
+                },
+                {
+                  "computed": null,
+                  "type": "row",
+                  "items": [
+                    {
+                      "preLabel": "Huvudinventerare/ rapportör",
+                      "inline": true,
+                      "computed": null,
+                      "dataClass": "span8",
+                      "source": "recordedBy",
+                      "preLabelClass": "span4",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "columns": [
+                        {
+                          "title": "Medinventerare",
+                          "width": "90%",
+                          "source": "helper",
+                          "type": "text"
+                        }
+                      ],
+                      "source": "helpers",
+                      "type": "table",
+                      "userAddedRows": true,
+                      "disableTableUpload": true
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "preLabel": "Inventeringsdatum",
+                      "inline": true,
+                      "computed": null,
+                      "dataClass": "span8",
+                      "source": "surveyDate",
+                      "preLabelClass": "span4",
+                      "type": "date"
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "preLabel": "Starttid",
+                      "inline": true,
+                      "computed": null,
+                      "dataClass": "span8",
+                      "source": "surveyStartTime",
+                      "preLabelClass": "span4",
+                      "type": "time"
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "preLabel": "Sluttid",
+                      "source": "surveyFinishTime",
+                      "type": "time"
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "type": "literal",
+                      "source": "<h4>Väder vid start</h4>"
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "type": "col",
+                      "items": [
+                        {
+                          "preLabel": "Moln",
+                          "source": "cloudsStart",
+                          "type": "selectOne"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "col",
+                      "items": [
+                        {
+                          "preLabel": "Temperatur (grader C)",
+                          "source": "temperatureStart",
+                          "type": "number"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "type": "col",
+                      "items": [
+                        {
+                          "preLabel": "Nederbörd",
+                          "source": "precipitationStart",
+                          "type": "selectOne"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "col",
+                      "items": [
+                        {
+                          "preLabel": "Vind (m/s)",
+                          "source": "windStart",
+                          "type": "number"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "type": "literal",
+                      "source": "<h4>Väder vid slut</h4>"
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "type": "col",
+                      "items": [
+                        {
+                          "preLabel": "Moln",
+                          "source": "cloudsEnd",
+                          "type": "selectOne"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "col",
+                      "items": [
+                        {
+                          "preLabel": "Temperatur (grader C)",
+                          "source": "temperatureEnd",
+                          "type": "number"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "type": "col",
+                      "items": [
+                        {
+                          "preLabel": "Nederbörd",
+                          "source": "precipitationEnd",
+                          "type": "selectOne"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "col",
+                      "items": [
+                        {
+                          "preLabel": "Vind (m/s)",
+                          "source": "windEnd",
+                          "type": "number"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": ""
+            }
+          ],
+          "class": ""
+        },
+        {
+          "type": "col",
+          "items": [
+            {
+              "boxed": true,
+              "title": "Ruta och rutt",
+              "type": "section",
+              "items": [
+                {
+                  "computed": null,
+                  "type": "row",
+                  "items": [
+                    {
+                      "includeNotes": false,
+                      "orientation": "vertical",
+                      "computed": null,
+                      "autoLocalitySearch": true,
+                      "readonly": true,
+                      "includeSource": false,
+                      "includeAccuracy": false,
+                      "hideSiteSelection": false,
+                      "source": "location",
+                      "type": "geoMap",
+                      "includeLocality": false
+                    }
+                  ]
+                }
+              ],
+              "class": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "items": [
+        {
+          "type": "row",
+          "items": [
+            {
+              "type": "col",
+              "items": [
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "source": "<b>Kommentarer - Noteringar om avvikelser, överhoppningar, pauser, svåra passager, annat rent praktiskt mm.</b> Skriv gärna sådant du tror kommande inventerare kan ha nytta av",
+                      "type": "literal"
+                    }
+                  ]
+                },
+                {
+                  "source": "eventRemarks",
+                  "type": "textarea",
+                  "rows": 5
+                }
+              ]
+            },
+            {
+              "type": "col",
+              "items": [
+                {
+                  "type": "row",
+                  "items": [
+                    {
+                      "source": "<b>Kommentarer - specifikt om observationer av fåglar, däggdjur och groddjur</b>",
+                      "type": "literal"
+                    }
+                  ]
+                },
+                {
+                  "computed": null,
+                  "source": "comments",
+                  "type": "textarea",
+                  "rows": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "items": [
+        {
+          "type": "section",
+          "items": [
+            {
+              "type": "row",
+              "items": [
+                {
+                  "source": "Använd \"tab\"-knappen för att flytta mellan cellerna",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "source": "<h4>Starttider för punkterna</h4>(ex. <b>410</b> för 04.10, <b>30</b> för 00.30 och <b>145</b> för 1.45)",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "columns": [
+                    {
+                      "source": "TidP01",
+                      "title": "P1",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP02",
+                      "title": "P2",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP03",
+                      "title": "P3",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP04",
+                      "title": "P4",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP05",
+                      "title": "P5",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP06",
+                      "title": "P6",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP07",
+                      "title": "P7",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP08",
+                      "title": "P8",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP09",
+                      "title": "P9",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP10",
+                      "title": "P10",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP11",
+                      "title": "P11",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP12",
+                      "title": "P12",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP13",
+                      "title": "P13",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP14",
+                      "title": "P14",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP15",
+                      "title": "P15",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP16",
+                      "title": "P16",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP17",
+                      "title": "P17",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP18",
+                      "title": "P18",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP19",
+                      "title": "P19",
+                      "type": "text"
+                    },
+                    {
+                      "source": "TidP20",
+                      "title": "P20",
+                      "type": "text"
+                    }
+                  ],
+                  "source": "timeOfObservation",
+                  "type": "table",
+                  "userAddedRows": "false",
+                  "disableTableUpload": true
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "source": "<h4>Fåglar (antal)</h4>",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "columns": [
+                    {
+                      "title": "Art",
+                      "width": "20%",
+                      "source": "species",
+                      "type": "autocomplete"
+                    },
+                    {
+                      "source": "swedishRank",
+                      "width": "4%",
+                      "title": "Rank",
+                      "type": "text",
+                      "readonly": "true"
+                    },
+                    {
+                      "source": "P01",
+                      "title": "P1",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P02",
+                      "title": "P2",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P03",
+                      "title": "P3",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P04",
+                      "title": "P4",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P05",
+                      "title": "P5",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P06",
+                      "title": "P6",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P07",
+                      "title": "P7",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P08",
+                      "title": "P8",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P09",
+                      "title": "P9",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P10",
+                      "title": "P10",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P11",
+                      "title": "P11",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P12",
+                      "title": "P12",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P13",
+                      "title": "P13",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P14",
+                      "title": "P14",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P15",
+                      "title": "P15",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P16",
+                      "title": "P16",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P17",
+                      "title": "P17",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P18",
+                      "title": "P18",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P19",
+                      "title": "P19",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P20",
+                      "title": "P20",
+                      "type": "text"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "individualCount",
+                      "title": "Total",
+                      "type": "number"
+                    }
+                  ],
+                  "source": "observations",
+                  "type": "table",
+                  "userAddedRows": true,
+                  "disableTableUpload": true,
+                  "footer": {
+                    "rows": [
+                      {
+                        "columns": [
+                          {
+                            "noEdit": "true",
+                            "width": "20%",
+                            "type": "literal",
+                            "source": "Antal per punkt"
+                          },
+                          {
+                            "noEdit": "true"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP01",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP02",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP03",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP04",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP05",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP06",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP07",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP08",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP09",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP10",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP11",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP12",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP13",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP14",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP15",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP16",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP17",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP18",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP19",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP20",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalPointCount",
+                            "type": "number"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "columns": [
+                    {
+                      "noEdit": "true",
+                      "width": "20%",
+                      "type": "literal",
+                      "title": "Antal arter",
+                      "source": ""
+                    },
+                    {
+                      "noEdit": "true",
+                      "title": "Rank",
+                      "width": "4%"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP01",
+                      "title": "P1",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP02",
+                      "title": "P2",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP03",
+                      "title": "P3",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP04",
+                      "title": "P4",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP05",
+                      "title": "P5",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP06",
+                      "title": "P6",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP07",
+                      "title": "P7",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP08",
+                      "title": "P8",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP09",
+                      "title": "P09",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP10",
+                      "title": "P10",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP11",
+                      "title": "P11",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP12",
+                      "title": "P12",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP13",
+                      "title": "P13",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP14",
+                      "title": "P14",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP15",
+                      "title": "P15",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP16",
+                      "title": "P16",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP17",
+                      "title": "P17",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP18",
+                      "title": "P18",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP19",
+                      "title": "P19",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP20",
+                      "title": "P20",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalSpeciesCount",
+                      "title": "Total",
+                      "type": "number"
+                    }
+                  ],
+                  "source": "totalSpeciesInColumn",
+                  "type": "table",
+                  "userAddedRows": false,
+                  "disableTableUpload": true
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "source": "<h4>Ugglekullar (antal kullar)</h4>",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "columns": [
+                    {
+                      "title": "Art",
+                      "width": "20%",
+                      "source": "speciesYoungOwl",
+                      "type": "autocomplete"
+                    },
+                    {
+                      "source": "P01",
+                      "title": "P1",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P02",
+                      "title": "P2",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P03",
+                      "title": "P3",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P04",
+                      "title": "P4",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P05",
+                      "title": "P5",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P06",
+                      "title": "P6",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P07",
+                      "title": "P7",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P08",
+                      "title": "P8",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P09",
+                      "title": "P9",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P10",
+                      "title": "P10",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P11",
+                      "title": "P11",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P12",
+                      "title": "P12",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P13",
+                      "title": "P13",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P14",
+                      "title": "P14",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P15",
+                      "title": "P15",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P16",
+                      "title": "P16",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P17",
+                      "title": "P17",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P18",
+                      "title": "P18",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P19",
+                      "title": "P19",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P20",
+                      "title": "P20",
+                      "type": "text"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "individualCount",
+                      "title": "Total",
+                      "type": "number"
+                    }
+                  ],
+                  "source": "youngOwlObservations",
+                  "type": "table",
+                  "userAddedRows": "true",
+                  "disableTableUpload": true,
+                  "footer": {
+                    "rows": [
+                      {
+                        "columns": [
+                          {
+                            "noEdit": "true",
+                            "width": "20%",
+                            "type": "literal",
+                            "source": "Antal per punkt"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP01YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP02YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP03YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP04YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP05YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP06YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP07YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP08YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP09YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP10YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP11YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP12YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP13YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP14YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP15YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP16YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP17YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP18YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP19YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP20YOwl",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalPointCountYOwl",
+                            "type": "number"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "columns": [
+                    {
+                      "noEdit": "true",
+                      "width": "20%",
+                      "type": "literal",
+                      "title": "Antal arter",
+                      "source": ""
+                    },
+                    {
+                      "noEdit": "true",
+                      "title": "Rank",
+                      "width": "4%"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP01",
+                      "title": "P1",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP02",
+                      "title": "P2",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP03",
+                      "title": "P3",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP04",
+                      "title": "P4",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP05",
+                      "title": "P5",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP06",
+                      "title": "P6",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP07",
+                      "title": "P7",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP08",
+                      "title": "P8",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP09",
+                      "title": "P09",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP10",
+                      "title": "P10",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP11",
+                      "title": "P11",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP12",
+                      "title": "P12",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP13",
+                      "title": "P13",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP14",
+                      "title": "P14",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP15",
+                      "title": "P15",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP16",
+                      "title": "P16",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP17",
+                      "title": "P17",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP18",
+                      "title": "P18",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP19",
+                      "title": "P19",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP20",
+                      "title": "P20",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalSpeciesCount",
+                      "title": "Total",
+                      "type": "number"
+                    }
+                  ],
+                  "source": "totalYOwlSpeciesInColumn",
+                  "type": "table",
+                  "userAddedRows": false,
+                  "disableTableUpload": true
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "source": "<h4>Däggdjur på punkterna (antal)</h4>",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "source": "mammalsCounted",
+                  "type": "selectOne",
+                  "preLabel": "Har räknat däggdjur"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "columns": [
+                    {
+                      "title": "Art",
+                      "width": "20%",
+                      "source": "speciesMammals",
+                      "type": "autocomplete"
+                    },
+                    {
+                      "source": "P01",
+                      "title": "P1",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P02",
+                      "title": "P2",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P03",
+                      "title": "P3",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P04",
+                      "title": "P4",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P05",
+                      "title": "P5",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P06",
+                      "title": "P6",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P07",
+                      "title": "P7",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P08",
+                      "title": "P8",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P09",
+                      "title": "P9",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P10",
+                      "title": "P10",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P11",
+                      "title": "P11",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P12",
+                      "title": "P12",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P13",
+                      "title": "P13",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P14",
+                      "title": "P14",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P15",
+                      "title": "P15",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P16",
+                      "title": "P16",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P17",
+                      "title": "P17",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P18",
+                      "title": "P18",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P19",
+                      "title": "P19",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P20",
+                      "title": "P20",
+                      "type": "text"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "individualCount",
+                      "title": "Total",
+                      "type": "text"
+                    }
+                  ],
+                  "source": "mammalObservations",
+                  "type": "table",
+                  "userAddedRows": true,
+                  "disableTableUpload": true,
+                  "footer": {
+                    "rows": [
+                      {
+                        "columns": [
+                          {
+                            "noEdit": "true",
+                            "width": "20%",
+                            "type": "literal",
+                            "source": "Antal per punkt"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP01Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP02Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP03Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP04Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP05Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP06Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP07Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP08Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP09Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP10Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP11Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP12Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP13Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP14Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP15Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP16Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP17Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP18Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP19Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP20Mammals",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalPointCountMammals",
+                            "type": "number"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "columns": [
+                    {
+                      "noEdit": "true",
+                      "width": "20%",
+                      "type": "literal",
+                      "title": "Antal arter",
+                      "source": ""
+                    },
+                    {
+                      "noEdit": "true",
+                      "title": "Rank",
+                      "width": "4%"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP01",
+                      "title": "P1",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP02",
+                      "title": "P2",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP03",
+                      "title": "P3",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP04",
+                      "title": "P4",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP05",
+                      "title": "P5",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP06",
+                      "title": "P6",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP07",
+                      "title": "P7",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP08",
+                      "title": "P8",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP09",
+                      "title": "P09",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP10",
+                      "title": "P10",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP11",
+                      "title": "P11",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP12",
+                      "title": "P12",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP13",
+                      "title": "P13",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP14",
+                      "title": "P14",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP15",
+                      "title": "P15",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP16",
+                      "title": "P16",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP17",
+                      "title": "P17",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP18",
+                      "title": "P18",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP19",
+                      "title": "P19",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP20",
+                      "title": "P20",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalSpeciesCountMammals",
+                      "title": "Total",
+                      "type": "number"
+                    }
+                  ],
+                  "source": "totalMammalSpeciesInColumn",
+                  "type": "table",
+                  "userAddedRows": false,
+                  "disableTableUpload": true
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "source": "<h4>Däggdjur per sträcka (antal)</h4>",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "columns": [
+                    {
+                      "title": "Art",
+                      "width": "20%",
+                      "source": "speciesMammalsOnRoad",
+                      "type": "autocomplete"
+                    },
+                    {
+                      "source": "P01",
+                      "title": "T1",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P02",
+                      "title": "T2",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P03",
+                      "title": "T3",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P04",
+                      "title": "T4",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P05",
+                      "title": "T5",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P06",
+                      "title": "T6",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P07",
+                      "title": "T7",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P08",
+                      "title": "T8",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P09",
+                      "title": "T9",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P10",
+                      "title": "T10",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P11",
+                      "title": "T11",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P12",
+                      "title": "T12",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P13",
+                      "title": "T13",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P14",
+                      "title": "T14",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P15",
+                      "title": "T15",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P16",
+                      "title": "T16",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P17",
+                      "title": "T17",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P18",
+                      "title": "T18",
+                      "type": "text"
+                    },
+                    {
+                      "source": "P19",
+                      "title": "T19",
+                      "type": "text"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "individualCount",
+                      "title": "Total",
+                      "type": "number"
+                    }
+                  ],
+                  "source": "mammalObservationsOnRoad",
+                  "type": "table",
+                  "userAddedRows": true,
+                  "disableTableUpload": true,
+                  "footer": {
+                    "rows": [
+                      {
+                        "columns": [
+                          {
+                            "noEdit": "true",
+                            "width": "20%",
+                            "type": "literal",
+                            "source": "Antal per sträcka"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP01MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP02MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP03MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP04MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP05MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP06MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP07MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP08MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP09MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP10MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP11MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP12MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP13MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP14MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP15MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP16MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP17MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP18MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalP19MammalsRd",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalRoadCountMammals",
+                            "type": "number"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "columns": [
+                    {
+                      "noEdit": "true",
+                      "width": "20%",
+                      "type": "literal",
+                      "title": "Antal arter",
+                      "source": ""
+                    },
+                    {
+                      "noEdit": "true",
+                      "title": "Rank",
+                      "width": "4%"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP01",
+                      "title": "P1",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP02",
+                      "title": "P2",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP03",
+                      "title": "P3",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP04",
+                      "title": "P4",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP05",
+                      "title": "P5",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP06",
+                      "title": "P6",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP07",
+                      "title": "P7",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP08",
+                      "title": "P8",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP09",
+                      "title": "P09",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP10",
+                      "title": "P10",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP11",
+                      "title": "P11",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP12",
+                      "title": "P12",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP13",
+                      "title": "P13",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP14",
+                      "title": "P14",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP15",
+                      "title": "P15",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP16",
+                      "title": "P16",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP17",
+                      "title": "P17",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP18",
+                      "title": "P18",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP19",
+                      "title": "P19",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalP20",
+                      "title": "P20",
+                      "type": "number"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "totalSpeciesCountMammalsRd",
+                      "title": "Total",
+                      "type": "number"
+                    }
+                  ],
+                  "source": "totalMammalRdSpeciesInColumn",
+                  "type": "table",
+                  "userAddedRows": false,
+                  "disableTableUpload": true
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "source": "<h4>Groddjur (närvaro, inga antal)</h4>",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "source": "amphibiansCounted",
+                  "type": "selectOne",
+                  "preLabel": "Har räknat groddjur"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "columns": [
+                    {
+                      "title": "Art",
+                      "width": "20%",
+                      "source": "speciesAmphibians",
+                      "type": "autocomplete"
+                    },
+                    {
+                      "source": "P01",
+                      "title": "P1",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P02",
+                      "title": "P2",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P03",
+                      "title": "P3",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P04",
+                      "title": "P4",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P05",
+                      "title": "P5",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P06",
+                      "title": "P6",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P07",
+                      "title": "P7",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P08",
+                      "title": "P8",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P09",
+                      "title": "P9",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P10",
+                      "title": "P10",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P11",
+                      "title": "P11",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P12",
+                      "title": "P12",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P13",
+                      "title": "P13",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P14",
+                      "title": "P14",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P15",
+                      "title": "P15",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P16",
+                      "title": "P16",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P17",
+                      "title": "P17",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P18",
+                      "title": "P18",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P19",
+                      "title": "P19",
+                      "type": "selectOne"
+                    },
+                    {
+                      "source": "P20",
+                      "title": "P20",
+                      "type": "selectOne"
+                    },
+                    {
+                      "noEdit": "true",
+                      "source": "individualCount",
+                      "title": "Total",
+                      "type": "number"
+                    }
+                  ],
+                  "source": "amphibianObservations",
+                  "type": "table",
+                  "userAddedRows": true,
+                  "disableTableUpload": true,
+                  "footer": {
+                    "rows": [
+                      {
+                        "columns": [
+                          {
+                            "noEdit": "true",
+                            "width": "20%",
+                            "type": "literal",
+                            "source": "Antal arter per punkt"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP01Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP02Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP03Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP04Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP05Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP06Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP07Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP08Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP09Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP10Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP11Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP12Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP13Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP14Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP15Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP16Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP17Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP18Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP19Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpP20Amphibian",
+                            "type": "number"
+                          },
+                          {
+                            "noEdit": "true",
+                            "source": "totalSpeciesCountAmphibian",
+                            "type": "number"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "source": "<h4>Ljudföroreningar</h4>",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                {
+                  "columns": [
+                    {
+                      "source": "P01",
+                      "title": "P1",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P02",
+                      "title": "P2",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P03",
+                      "title": "P3",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P04",
+                      "title": "P4",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P05",
+                      "title": "P5",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P06",
+                      "title": "P6",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P07",
+                      "title": "P7",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P08",
+                      "title": "P8",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P09",
+                      "title": "P9",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P10",
+                      "title": "P10",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P11",
+                      "title": "P11",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P12",
+                      "title": "P12",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P13",
+                      "title": "P13",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P14",
+                      "title": "P14",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P15",
+                      "title": "P15",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P16",
+                      "title": "P16",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P17",
+                      "title": "P17",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P18",
+                      "title": "P18",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P19",
+                      "title": "P19",
+                      "type": "selectOne",
+                      "width": "5%"
+                    },
+                    {
+                      "source": "P20",
+                      "title": "P20",
+                      "type": "selectOne",
+                      "width": "5%"
+                    }
+                  ],
+                  "source": "disturbances",
+                  "type": "table",
+                  "userAddedRows": false,
+                  "disableTableUpload": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "class": "output-section"
+    }
+  ]
+}
