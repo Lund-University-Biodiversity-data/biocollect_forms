@@ -178,102 +178,102 @@
         {
           "dataType": "number",
           "name": "TidP01",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP02",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP03",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP04",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP05",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP06",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP07",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP08",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP09",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP10",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP11",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP12",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP13",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP14",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP15",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP16",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP17",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP18",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP19",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         },
         {
           "dataType": "number",
           "name": "TidP20",
-          "validate":"custom[integer],min[0],max[2359]"
+          "validate": "custom[integer],min[0],max[2359]"
         }
       ],
       "dataType": "list",

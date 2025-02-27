@@ -107,41 +107,23 @@
           "validate": "required"
         },
         {
-          "dataType": "text",
-          "name": "swedishRank"
+          "dataType": "number",
+          "name": "island"
         },
         {
           "dataType": "number",
-          "decimalPlaces": 0,
-          "name": "island",
-          "validate": "required,min[0]",
-          "behaviour": [
-            {
-              "condition": "separateIslandWater == \"nej\"",
-              "type": "enable"
-            }
-          ]
+          "name": "water"
         },
         {
           "dataType": "number",
-          "decimalPlaces": 0,
-          "name": "water",
-          "validate": "required,min[0]",
-          "behaviour": [
-            {
-              "condition": "separateIslandWater == \"nej\"",
-              "type": "enable"
-            }
-          ]
-        },
-        {
-          "dataType": "number",
-          "decimalPlaces": 0,
           "name": "individualCount",
           "dwcAttribute": "individualCount",
-          "defaultValue": {
-            "expression": "water+island",
-            "type": "computed"
+          "computed": {
+            "operation": "sum",
+            "dependents": [
+              "island",
+              "water"
+            ]
           },
           "validate": "required,min[0]",
           "behaviour": [
@@ -157,8 +139,21 @@
     },
     {
       "dataType": "number",
+      "name": "islandCount",
+      "computed": {
+        "expression": "sum(observations, \"island\")"
+      }
+    },
+    {
+      "dataType": "number",
+      "name": "waterCount",
+      "computed": {
+        "expression": "sum(observations, \"water\")"
+      }
+    },
+    {
+      "dataType": "number",
       "name": "totalCount",
-      "decimalPlaces": 0,
       "computed": {
         "expression": "sum(observations, \"individualCount\")"
       }
@@ -166,7 +161,6 @@
     {
       "dataType": "number",
       "name": "totalSpeciesCount",
-      "decimalPlaces": 0,
       "computed": {
         "expression": "count(observations, \"species\")"
       }
@@ -283,7 +277,8 @@
                           "title": "Medinventerare",
                           "width": "90%",
                           "source": "helper",
-                          "type": "text"
+                          "type": "text",
+                          "validate": "required"
                         }
                       ],
                       "source": "helpers",
@@ -441,21 +436,15 @@
                       "validate": "required"
                     },
                     {
-                      "source": "swedishRank",
-                      "title": "Rank",
-                      "type": "text",
-                      "readonly": "true",
-                      "width": "7%"
-                    },
-                    {
                       "source": "island",
                       "title": "Fåglar på ö",
-                      "type": "number"
+                      "type": "text",
+                      "validate": "required,min[0]"
                     },
                     {
                       "source": "water",
                       "title": "Fåglar på öppet vatten",
-                      "type": "number"
+                      "type": "text"
                     },
                     {
                       "width": "15%",
@@ -475,6 +464,16 @@
             {
               "type": "row",
               "items": [
+                {
+                  "source": "islandCount",
+                  "preLabel": "Summa av individer (ö)",
+                  "type": "number"
+                },
+                {
+                  "source": "waterCount",
+                  "preLabel": "Summa av individer (öppet vatten)",
+                  "type": "number"
+                },
                 {
                   "source": "totalCount",
                   "preLabel": "Summa av individer (total)",
