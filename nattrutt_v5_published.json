@@ -285,7 +285,8 @@
         {
           "dataType": "species",
           "name": "species",
-          "dwcAttribute": "scientificName"
+          "dwcAttribute": "scientificName",
+          "validate": "required"
         },
         {
           "dataType": "text",
@@ -759,7 +760,8 @@
         {
           "dataType": "species",
           "name": "speciesYoungOwl",
-          "dwcAttribute": "scientificName"
+          "dwcAttribute": "scientificName",
+          "validate": "required"
         },
         {
           "dataType": "number",
@@ -1234,7 +1236,8 @@
         {
           "dataType": "species",
           "name": "speciesMammals",
-          "dwcAttribute": "scientificName"
+          "dwcAttribute": "scientificName",
+          "validate": "required"
         },
         {
           "dataType": "number",
@@ -1700,7 +1703,8 @@
         {
           "dataType": "species",
           "name": "speciesMammalsOnRoad",
-          "dwcAttribute": "scientificName"
+          "dwcAttribute": "scientificName",
+          "validate": "required"
         },
         {
           "dataType": "number",
@@ -2162,7 +2166,8 @@
         {
           "dataType": "species",
           "name": "speciesAmphibians",
-          "dwcAttribute": "scientificName"
+          "dwcAttribute": "scientificName",
+          "validate": "required"
         },
         {
           "dataType": "number",
