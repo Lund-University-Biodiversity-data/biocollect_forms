@@ -132,7 +132,8 @@
         {
           "dataType": "species",
           "name": "species",
-          "dwcAttribute": "scientificName"
+          "dwcAttribute": "scientificName",
+          "validate": "required"
         },
         {
           "dataType": "text",
