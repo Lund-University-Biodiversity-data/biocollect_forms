@@ -294,7 +294,17 @@
         },
         {
           "dataType": "number",
-          "name": "P01"
+          "name": "P01",
+          "behaviour": [
+            {
+              "condition": "individualCount == 0",
+              "type": "conditional_validation",
+              "value": {
+                "message": "At least one column must be greater than 0",
+                "validate": "required,min[1]"
+              }
+            }
+          ]  
         },
         {
           "dataType": "number",
