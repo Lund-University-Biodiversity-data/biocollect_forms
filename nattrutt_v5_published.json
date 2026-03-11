@@ -300,11 +300,11 @@
               "condition": "individualCount == 0",
               "type": "conditional_validation",
               "value": {
-                "message": "At least one column must be greater than 0",
+                "message": "Minst en kolumn måste vara större än 0",
                 "validate": "required,min[1]"
               }
             }
-          ]  
+          ]
         },
         {
           "dataType": "number",
@@ -775,7 +775,17 @@
         },
         {
           "dataType": "number",
-          "name": "P01"
+          "name": "P01",
+          "behaviour": [
+            {
+              "condition": "individualCount == 0",
+              "type": "conditional_validation",
+              "value": {
+                "message": "Minst en kolumn måste vara större än 0",
+                "validate": "required,min[1]"
+              }
+            }
+          ]
         },
         {
           "dataType": "number",
@@ -1251,7 +1261,17 @@
         },
         {
           "dataType": "number",
-          "name": "P01"
+          "name": "P01",
+          "behaviour": [
+            {
+              "condition": "individualCount == 0",
+              "type": "conditional_validation",
+              "value": {
+                "message": "Minst en kolumn måste vara större än 0",
+                "validate": "required,min[1]"
+              }
+            }
+          ]
         },
         {
           "dataType": "number",
@@ -1718,7 +1738,17 @@
         },
         {
           "dataType": "number",
-          "name": "P01"
+          "name": "P01",
+          "behaviour": [
+            {
+              "condition": "individualCount == 0",
+              "type": "conditional_validation",
+              "value": {
+                "message": "Minst en kolumn måste vara större än 0",
+                "validate": "required,min[1]"
+              }
+            }
+          ]
         },
         {
           "dataType": "number",
@@ -1819,8 +1849,7 @@
             ]
           },
           "name": "individualCount",
-          "dwcAttribute": "individualCount",
-          "validate": "required,min[0]"
+          "dwcAttribute": "individualCount"
         }
       ],
       "dataType": "list",
@@ -2182,6 +2211,16 @@
         {
           "dataType": "number",
           "name": "P01",
+          "behaviour": [
+            {
+              "condition": "individualCount == 0",
+              "type": "conditional_validation",
+              "value": {
+                "message": "Minst en kolumn måste vara större än 0",
+                "validate": "required,min[1]"
+              }
+            }
+          ],
           "defaultValue": 0,
           "constraints": [
             0,
